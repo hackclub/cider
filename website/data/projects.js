@@ -19,8 +19,8 @@ export const projects = [
     description: "A pokedex built with React Native",
   },
   {
-    name: "Sahiti",
-    author: "Ecobuddy",
+    name: "Ecobuddy",
+    author: "Sahiti",
     link: "https://github.com/sahitid/ecobuddy",
     description:
       "An iOS app for sustainable living and completing eco-friendly exercises",
