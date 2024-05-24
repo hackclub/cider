@@ -55,7 +55,7 @@ export default function Home() {
               Learn&nbsp;More
             </a>
           </div> */}
-          <form className="flex gap-2" onSubmit={handleSubmit(onSubmit)}>
+          <form className="flex flex-col sm:flex-row gap-2" onSubmit={handleSubmit(onSubmit)}>
             <Controller
               name="email"
               control={control}
