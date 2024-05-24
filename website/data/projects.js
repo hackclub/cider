@@ -1,7 +1,7 @@
 export const projects = [
   {
     name: "Penguin Pair",
-    author: "Thomas",
+    author: "Thomas & Dieter",
     link: "https://apps.apple.com/pl/app/penguin-pair-cards/id6446442403",
     image: "https://cloud-7fz7o893d-hack-club-bot.vercel.app/0image.png",
     description: "A penguin card pairing game built with SwiftUI",
