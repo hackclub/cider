@@ -4,41 +4,39 @@ export const projects = [
     author: "Thomas",
     link: "https://apps.apple.com/pl/app/penguin-pair-cards/id6446442403",
     image: "https://cloud-7fz7o893d-hack-club-bot.vercel.app/0image.png",
+    description: "A penguin card pairing game built with SwiftUI",
   },
   {
     name: "Orpheus Pair",
     author: "Faisal (me!)",
     link: "https://github.com/faisalsayed10/dino-pair",
-    image: "",
+    description: "A card pairing game made with React Native and a lot of orpheus pics",
   },
   {
     name: "Pokedex",
     author: "JC",
     link: "https://github.com/jianmin-chen/react-native-pokedex",
-    image: "",
+    description: "A pokedex built with React Native",
   },
   {
     name: "Sahiti",
     author: "Ecobuddy",
     link: "https://github.com/sahitid/ecobuddy",
-    // image: "/apple-stretches.png",
-  },
-  {
-    name: "Pegasus",
-    author: "Jasper",
-    link: "https://github.com/Cyaneus-Co/pegasus-oss",
-    image: "",
+    description:
+      "An iOS app for sustainable living and completing eco-friendly exercises",
   },
   {
     name: "Mol",
     author: "Toby",
     link: "https://github.com/tobyab/ssc24",
-    image: "",
+    description:
+      "An iOS app to view the periodic table and its elements right from your iPhone",
   },
   {
     name: "Bird ID",
     author: "Samvid",
     link: "https://github.com/theamazing0/Bird-ID",
-    image: "",
+    description:
+      "A machine learning app to identify and learn about birds by taking pictures of it.",
   },
 ];

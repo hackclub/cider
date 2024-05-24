@@ -63,7 +63,7 @@ export default function Home() {
                 <input
                   required
                   type="email"
-                  className="text-red placeholder:text-red/80 text-lg w-full rounded-lg border-2 border-red focus:border-red bg-transparent py-1.5 px-3 focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-white/25"
+                  className="text-red placeholder:text-red/60 text-lg w-full rounded-lg border-2 border-red focus:border-red bg-transparent py-1.5 px-3 focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-white/25"
                   placeholder="fayd@hackclub.com"
                   {...field}
                 />
@@ -172,7 +172,7 @@ export default function Home() {
               <input
                 required
                 type="email"
-                className="text-red placeholder:text-red/80 text-lg w-full rounded-lg border-2 border-red focus:border-red bg-transparent py-1.5 px-3 focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-white/25"
+                className="text-red placeholder:text-red/60 text-lg w-full rounded-lg border-2 border-red focus:border-red bg-transparent py-1.5 px-3 focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-white/25"
                 placeholder="fayd@hackclub.com"
                 {...field}
               />
