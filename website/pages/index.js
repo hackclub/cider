@@ -1,5 +1,5 @@
 import Balancer from "react-wrap-balancer";
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import Project from "../components/Project";
 import useSWR from "swr";
 import fetcher from "../lib/fetcher";
@@ -11,7 +11,7 @@ import Question from "../components/Question";
 import { faqs } from "../data/faqs";
 
 export default function Home() {
-  const { register, handleSubmit } = useForm();
+  const { handleSubmit, control } = useForm();
 
   const onSubmit = (data) => {
     fetch("/api/submit", {
@@ -21,7 +21,7 @@ export default function Home() {
         "Content-Type": "application/json",
       },
     });
-    alert("Your email has been submitted.");
+    alert("Your email has been submitted! 🎉");
   };
 
   const { data } = useSWR("/api/time", fetcher);
@@ -56,11 +56,18 @@ export default function Home() {
             </a>
           </div> */}
           <form className="flex gap-2" onSubmit={handleSubmit(onSubmit)}>
-            <input
-              type="email"
-              className="text-red placeholder:text-red/80 text-lg w-full rounded-lg border-2 border-red focus:border-red bg-transparent py-1.5 px-3 focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-white/25"
-              placeholder="fayd@hackclub.com"
-              {...register("email", { required: true })}
+            <Controller
+              name="email"
+              control={control}
+              render={({ field }) => (
+                <input
+                  required
+                  type="email"
+                  className="text-red placeholder:text-red/80 text-lg w-full rounded-lg border-2 border-red focus:border-red bg-transparent py-1.5 px-3 focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-white/25"
+                  placeholder="fayd@hackclub.com"
+                  {...field}
+                />
+              )}
             />
             <input
               type="submit"
@@ -158,12 +165,19 @@ export default function Home() {
           <Balancer>Design, Code, And Ship an iOS app to the App Store in 30 days</Balancer>
         </h2>
         <form className="flex flex-col my-4" onSubmit={handleSubmit(onSubmit)}>
-          <input
-            type="email"
-            className="text-black text-2xl bg-white mt-3 w-full rounded-lg border-2 border-red/20 focus:border-red bg-black/5 py-1.5 px-3 focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-white/25"
-            placeholder="start typing your email here..."
-            {...register("email", { required: true })}
-          ></input>
+          <Controller
+            name="email"
+            control={control}
+            render={({ field }) => (
+              <input
+                required
+                type="email"
+                className="text-red placeholder:text-red/80 text-lg w-full rounded-lg border-2 border-red focus:border-red bg-transparent py-1.5 px-3 focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-white/25"
+                placeholder="fayd@hackclub.com"
+                {...field}
+              />
+            )}
+          />
           <input
             type="submit"
             value="Sign up for the grant"
