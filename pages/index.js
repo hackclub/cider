@@ -30,7 +30,7 @@ export default function Home() {
         src="/flag.svg"
         className="absolute top-0 left-4 w-1/4 lg:w-1/12 hover:transform hover:-rotate-12 hover:-top-2 hover:duration-300 hover:ease-in-out"
       />
-      <section className="flex flex-col items-center justify-center min-h-screen gap-4 w-1/2 md:w-1/3">
+      <section className="flex flex-col items-center justify-center min-h-screen gap-4 w-10/12 md:w-1/3">
         <img src="/logo.svg" />
         <h2 className="text-4xl text-center">
           <Balancer ratio={0.2} className="">
@@ -75,15 +75,17 @@ export default function Home() {
               <h3 className="text-xl xl:text-2xl font-semibold text-red">
                 {heading}
               </h3>
-              <p className="text-base xl:text-lg font-medium">{description}</p>
+              <p className="text-base xl:text-lg font-medium text-gray-700">
+                {description}
+              </p>
             </div>
           ))}
         </div>
         <div className="flex flex-col gap-4 my-10">
           <h1 className="badge">Requirements</h1>
-          <ul className="list-disc list-inside text-gray-700">
+          <ul className="list-disc list-inside">
             {requirements.map((requirement, index) => (
-              <li key={index} className="xl:text-lg font-base">
+              <li key={index} className="xl:text-lg font-base text-gray-700">
                 {requirement}
               </li>
             ))}
@@ -96,7 +98,7 @@ export default function Home() {
         </h2>
         <img
           src="/apple-with-friends.png"
-          className="w-1/4 lg:w-[12%] -mt-16 mb-0 mx-auto"
+          className="w-1/2 md:w-1/4 lg:w-[12%] -mt-16 mb-0 mx-auto"
         />
         <div className="flex flex-col lg:flex-row gap-4">
           {projects.map((project, index) => (
@@ -114,7 +116,9 @@ export default function Home() {
       </section>
       <section className="mb-20 lg:my-20 flex flex-col justify-center gap-4 w-5/6 lg:w-2/3">
         <h2 className="text-5xl">
-          Design, Code, And Ship an iOS app to the App Store in 30 days
+          <Balancer>
+            Design, Code, And Ship an iOS app to the App Store in 30 days
+          </Balancer>
         </h2>
         <form className="flex flex-col my-4" onSubmit={handleSubmit(onSubmit)}>
           <input

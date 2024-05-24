@@ -16,8 +16,8 @@ export default function Question({ heading, description }) {
         </svg>
       </div>
       <div className="flex flex-col">
-        <h3 className="text-lg font-medium">{heading}</h3>
-        <p className="font-normal text-sm">{description}</p>
+        <h3 className="text-lg font-medium text-black">{heading}</h3>
+        <p className="font-normal text-sm text-gray-500">{description}</p>
       </div>
     </div>
   );
