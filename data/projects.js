@@ -7,7 +7,7 @@ export const projects = [
   },
   {
     name: "Orpheus Pair",
-    author: "Faisal",
+    author: "Faisal (me!)",
     link: "https://github.com/faisalsayed10/dino-pair",
     image: "",
   },
@@ -37,7 +37,7 @@ export const projects = [
   },
   {
     name: "Bird ID",
-    author: "Samvidbn",
+    author: "Samvid",
     link: "https://github.com/theamazing0/Bird-ID",
     image: "",
   },
