@@ -35,14 +35,15 @@ export default function Home() {
         />
       </a>
       <div className="w-full h-full flex flex-col items-center gradient-bg">
-        <section className="flex flex-col items-center justify-center min-h-screen gap-4 w-10/12 md:w-1/3">
+        <section className="flex flex-col items-center justify-center min-h-screen gap-4 w-10/12 lg:w-1/3">
+          <h2 className="text-2xl">Beta running from June 1st to June 30th</h2>
           <img src="/logo.svg" />
           <h2 className="text-4xl text-center">
             <Balancer ratio={0.2} className="">
               Design, Code, and Ship an iOS app to the App Store in 30 days
             </Balancer>
           </h2>
-          <div className="flex items-center justify-center gap-2">
+          {/* <div className="flex items-center justify-center gap-2">
             <a
               href="https://forms.hackclub.com/t/jALEZHqGE2us"
               target="_blank"
@@ -53,7 +54,20 @@ export default function Home() {
             <a href="#prompt" className="badge text-4xl mt-4 hover:bg-red hover:text-white">
               Learn&nbsp;More
             </a>
-          </div>
+          </div> */}
+          <form className="flex gap-2" onSubmit={handleSubmit(onSubmit)}>
+            <input
+              type="email"
+              className="text-red placeholder:text-red/80 text-lg w-full rounded-lg border-2 border-red focus:border-red bg-transparent py-1.5 px-3 focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-white/25"
+              placeholder="fayd@hackclub.com"
+              {...register("email", { required: true })}
+            />
+            <input
+              type="submit"
+              value="Sign up for the grant"
+              className="text-white bg-red px-4 py-2 font-medium text-lg font-sans text-center rounded-lg"
+            />
+          </form>
           {/* <img
           src="/apple-throws-airplane.png"
           className="w-1/4 lg:w-1/6 absolute bottom-10 right-20 xl:right-60"
@@ -68,23 +82,43 @@ export default function Home() {
         id="prompt"
         className="min-h-screen flex flex-col justify-center gap-4 w-5/6 my-12 lg:mt-0 md:w-11/12 2xl:w-2/3"
       >
-        <div className="flex flex-col md:flex-row md:items-center gap-4">
+        {/* <div className="flex flex-col md:flex-row md:items-center gap-4">
           <h1 className="badge">Prompt</h1>
           <p className="text-xl xl:text-2xl font-medium text-gray-700">
             <Balancer>
               Build an app that improves an aspect of your (and your friends’) lives
             </Balancer>
           </p>
-        </div>
+        </div> */}
         <div className="hidden xl:block border-t border-gray-300 transform translate-y-40" />
         <div className="flex flex-col xl:flex-row gap-5 xl:gap-10 mt-4">
-          {steps.map(({ heading, description }, index) => (
+          {steps.map(({ heading, description, link }, index) => (
             <div
               key={index}
-              className="flex flex-col xl:w-1/2 gap-1 bg-soft-white xl:p-5 xl:border xl:border-gray-300 xl:rounded-xl z-10 xl:shadow-lg"
+              className="flex flex-col xl:justify-between xl:w-1/2 gap-1 bg-soft-white xl:p-5 xl:border xl:border-gray-300 xl:rounded-xl z-10 xl:shadow-lg"
             >
-              <h3 className="text-xl xl:text-2xl font-semibold text-red">{heading}</h3>
-              <p className="text-base xl:text-lg font-medium text-gray-700">{description}</p>
+              <div className="flex flex-col">
+                <h3 className="text-xl xl:text-2xl font-semibold text-red">{heading}</h3>
+                <p className="text-base xl:text-lg font-medium text-gray-700">{description}</p>
+              </div>
+              {link && (
+                <a href={link} className="text-red text-base xl:text-lg font-medium">
+                  Submit{" "}
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="inline"
+                  >
+                    <path
+                      d="M15.0378 6.34317L13.6269 7.76069L16.8972 11.0157L3.29211 11.0293L3.29413 13.0293L16.8619 13.0157L13.6467 16.2459L15.0643 17.6568L20.7079 11.9868L15.0378 6.34317Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </a>
+              )}
             </div>
           ))}
         </div>
