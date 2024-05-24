@@ -134,7 +134,7 @@ export default function Home() {
         </p>
         <img
           src="/apple-stretches.png"
-          className="w-24 absolute right-4 lg:right-72"
+          className="w-24 hidden lg:block absolute lg:right-72"
         />
       </section>
       <Footer />
