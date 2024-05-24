@@ -34,7 +34,7 @@ export default function Home() {
           className="absolute top-0 left-4 w-1/4 lg:w-1/12 hover:transform hover:-rotate-12 hover:-top-2 hover:duration-300 hover:ease-in-out"
         />
       </a>
-      <div className="w-full h-full bg-gradient-to-r from-[#FF6347] via-[#FFA07A] to-[#FFF8DC] flex flex-col items-center">
+      <div className="w-full h-full flex flex-col items-center gradient-bg">
         <section className="flex flex-col items-center justify-center min-h-screen gap-4 w-10/12 md:w-1/3">
           <img src="/logo.svg" />
           <h2 className="text-4xl text-center">
