@@ -1,18 +1,41 @@
+@font-face {
+    font-family: "VC Garamond";
+    src: url("/VCGaramond.otf") format("opentype");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html.dark {
-    color: #ffffff;
-    background-color: #000000;
+html {
+    @apply scroll-smooth;
+}
+
+body {
+    @apply bg-soft-white;
+}
+
+h1,
+h2 {
+    @apply font-garamond text-red;
+}
+
+.badge {
+    @apply rounded-full text-red border-2 border-red px-4 py-2 font-medium text-xl font-sans text-center w-fit;
 }
 
 /* Fixes Tailwind h-screen on iPhones */
 @supports (-webkit-touch-callout: none) {
     .h-screen {
-      height: -webkit-fill-available;
+        height: -webkit-fill-available;
     }
-  }
+}
 
 /* Fixes outline style for inputs on Safari */
-input:focus { outline: none; }
+input:focus {
+    outline: none;
+}
+
+footer a {
+    @apply decoration-dotted underline italic hover:decoration-wavy;
+}
