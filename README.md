@@ -2,7 +2,7 @@
 
 A $100 grant for an Apple Developer Membership. Beta running from June 1st to June 30th.
 
-![banner](/public/banner.png)
+![banner](/website/public/banner.png)
 
 ## How to get started?
 
