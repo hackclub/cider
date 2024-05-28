@@ -72,7 +72,7 @@ export default function Home() {
             <input
               type="submit"
               value="Sign up for the grant"
-              className="text-white bg-red px-4 py-2 font-medium text-lg font-sans text-center rounded-lg"
+              className="text-white bg-red px-4 py-2 font-medium text-lg font-sans text-center rounded-lg cursor-pointer"
             />
           </form>
           {/* <img
@@ -181,7 +181,7 @@ export default function Home() {
           <input
             type="submit"
             value="Sign up for the grant"
-            className="badge text-2xl mt-4 hover:bg-red hover:text-white"
+            className="badge text-2xl mt-4 hover:bg-red hover:text-white cursor-pointer"
           />
         </form>
         <p className="italic text-red/50 text-2xl hover:text-red hover:transition hover:duration-300">
