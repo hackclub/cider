@@ -184,9 +184,9 @@ export default function Home() {
             className="badge text-2xl mt-4 hover:bg-red hover:text-white cursor-pointer"
           />
         </form>
-        <p className="italic text-red/50 text-2xl hover:text-red hover:transition hover:duration-300">
+        {/* <p className="italic text-red/50 text-2xl hover:text-red hover:transition hover:duration-300">
           kickoff call in {data ? data.time : "loading..."} (join #cider)
-        </p>
+        </p> */}
         <div className="mt-12 max-w-screen-lg mx-auto rounded-lg">
           <div className="text-center">
             <a
