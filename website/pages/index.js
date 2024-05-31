@@ -34,8 +34,8 @@ export default function Home() {
           className="absolute top-0 left-4 w-1/4 lg:w-1/12 hover:transform hover:-rotate-12 hover:-top-2 hover:duration-300 hover:ease-in-out"
         />
       </a>
-      <div className="w-full h-full flex flex-col items-center gradient-bg">
-        <section className="flex flex-col items-center justify-center min-h-screen gap-4 w-10/12 lg:w-1/3">
+      <div className="w-full h-full flex flex-col items-center gradient-bg min-h-screen">
+        <section className="flex flex-col items-center justify-center min-h-[90vh] gap-4 w-10/12 lg:w-1/3">
           <h2 className="text-2xl">Beta running from June 1st to June 30th</h2>
           <img src="/logo.svg" />
           <h2 className="text-4xl text-center">
@@ -43,47 +43,43 @@ export default function Home() {
               Design, Code, and Ship an iOS app to the App Store in 30 days
             </Balancer>
           </h2>
-          {/* <div className="flex items-center justify-center gap-2">
+          <div className="flex items-center justify-center gap-2">
             <a
               href="https://forms.hackclub.com/t/jALEZHqGE2us"
               target="_blank"
-              className="badge text-4xl mt-4 !text-white bg-red"
+              className="rounded-full border-2 border-red px-4 py-2 font-medium text-xl font-sans text-center w-fit mt-4 !text-white bg-red"
             >
               Submit&nbsp;Demo
             </a>
-            <a href="#prompt" className="badge text-4xl mt-4 hover:bg-red hover:text-white">
-              Learn&nbsp;More
+            <a
+              href="https://github.com/hackclub/cider-website#make-your-pr"
+              target="_blank"
+              className="rounded-full text-red border-2 border-red px-4 py-2 font-medium text-xl font-sans text-center w-fit mt-4 hover:bg-red hover:text-white"
+            >
+              Submit&nbsp;PR
             </a>
-          </div> */}
-          <form className="flex flex-col sm:flex-row gap-2" onSubmit={handleSubmit(onSubmit)}>
-            <Controller
-              name="email"
-              control={control}
-              render={({ field }) => (
-                <input
-                  required
-                  type="email"
-                  className="text-red placeholder:text-red/60 text-lg w-full rounded-lg border-2 border-red focus:border-red bg-transparent py-1.5 px-3 focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-white/25"
-                  placeholder="fayd@hackclub.com"
-                  {...field}
-                />
-              )}
-            />
-            <input
-              type="submit"
-              value="Sign up for the grant"
-              className="text-white bg-red px-4 py-2 font-medium text-lg font-sans text-center rounded-lg cursor-pointer"
-            />
-          </form>
-          {/* <img
-          src="/apple-throws-airplane.png"
-          className="w-1/4 lg:w-1/6 absolute bottom-10 right-20 xl:right-60"
-        />
-        <img
-          src="/apple-building-blocks.png"
-          className="w-1/4 lg:w-1/6 absolute left-20 xl:left-60 bottom-10"
-        /> */}
+          </div>
         </section>
+        <form className="flex flex-col sm:flex-row gap-2 mb-10" onSubmit={handleSubmit(onSubmit)}>
+          <Controller
+            name="email"
+            control={control}
+            render={({ field }) => (
+              <input
+                required
+                type="email"
+                className="text-red placeholder:text-red/60 text-lg w-full rounded-lg border-2 border-red focus:border-red bg-transparent py-1.5 px-3 focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-white/25"
+                placeholder="fayd@hackclub.com"
+                {...field}
+              />
+            )}
+          />
+          <input
+            type="submit"
+            value="Sign up for the grant"
+            className="text-white bg-red px-4 py-2 font-medium text-lg font-sans text-center rounded-lg cursor-pointer"
+          />
+        </form>
       </div>
       <section
         id="prompt"
@@ -99,10 +95,12 @@ export default function Home() {
         </div> */}
         <div className="hidden xl:block border-t border-gray-300 transform translate-y-40" />
         <div className="flex flex-col xl:flex-row gap-5 xl:gap-10 mt-4">
-          {steps.map(({ heading, description, link }, index) => (
+          {steps.map(({ heading, description, link, primary }, index) => (
             <div
               key={index}
-              className="flex flex-col xl:justify-between xl:w-1/2 gap-1 bg-soft-white xl:p-5 xl:border xl:border-gray-300 xl:rounded-xl z-10 xl:shadow-lg"
+              className={`flex flex-col xl:justify-between xl:w-1/2 gap-1 bg-soft-white xl:p-5 xl:border xl:rounded-xl z-10 xl:shadow-lg ${
+                primary ? "xl:border-red xl:scale-110" : "xl:border-gray-300"
+              }`}
             >
               <div className="flex flex-col">
                 <h3 className="text-xl xl:text-2xl font-semibold text-red">{heading}</h3>
@@ -181,7 +179,7 @@ export default function Home() {
           <input
             type="submit"
             value="Sign up for the grant"
-            className="badge text-2xl mt-4 hover:bg-red hover:text-white cursor-pointer"
+            className="rounded-full text-red border-2 border-red px-4 py-2 font-medium text-xl font-sans text-center w-fit mt-4 hover:bg-red hover:text-white cursor-pointer"
           />
         </form>
         {/* <p className="italic text-red/50 text-2xl hover:text-red hover:transition hover:duration-300">

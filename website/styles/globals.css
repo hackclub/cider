@@ -21,7 +21,7 @@ h2 {
 }
 
 .badge {
-  @apply rounded-full text-red border-2 border-red px-4 py-2 font-medium text-xl font-sans text-center w-fit;
+  @apply rounded-md text-red border-2 border-red px-4 py-2 font-medium text-xl font-sans text-center w-fit;
 }
 
 /* Fixes Tailwind h-screen on iPhones */

@@ -3,6 +3,7 @@ export const steps = [
     heading: "Submit an app demo",
     description: "We'll help you get it on TestFlight.",
     link: "https://forms.hackclub.com/t/jALEZHqGE2us",
+    primary: true,
   },
   {
     heading: "Build your app",
@@ -17,6 +18,7 @@ export const steps = [
     description:
       "Make a pull request adding a folder with your app's name in the submissions folder.",
     link: "https://github.com/hackclub/cider-website#make-your-pr",
+    primary: true,
   },
   {
     heading: "Launch your app",
