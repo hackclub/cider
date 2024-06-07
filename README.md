@@ -25,6 +25,7 @@ A $100 grant for an Apple Developer Membership. Beta running from June 1st to Ju
 - The app must include at least three core features that work together to create a cohesive experience. For example, a social network app could include user profiles, a news feed, and direct messaging.
 - The app must have some sort of data management system, using either local storage, cloud databases, or APIs.
 - The app could involve integrating with external APIs, or using advanced features of React Native or SwiftUI.
+- The app should have a clean, user-friendly design that is easy to navigate and visually appealing.
 - The app must be submitted by June 30th, 2024 to be considered for the grant.
 
 ## Make Your PR
