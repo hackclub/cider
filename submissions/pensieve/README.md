@@ -12,7 +12,7 @@
 
 **Did you use #hack-hour to log your progress?**: No
 
-**Testflight link**: Waiting on public URL.
+**Testflight link**: https://testflight.apple.com/join/SCH8Un2P
 
 **How many users on testflight?**: NA
 
