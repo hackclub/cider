@@ -1,8 +1,4 @@
-# iOS App Submissions
-
-Create a new directory in this folder with the name of your app. Inside the directory, create a markdown file with the name `README.md` and include the following details:
-
----
+# Sujud by Muhammad Shah
 
 **Name**: Sujud
 
