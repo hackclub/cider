@@ -14,7 +14,7 @@ Create a new directory in this folder with the name of your app. Inside the dire
 
 **How many hours did you spend on this**: 60 hours
 
-**Did you use #hack-hour to log your progress?**: Yes
+**Did you use #arcade to log your progress?**: Yes / No
 
 **Testflight link**: https://testflight.apple.com/join/4kxN5iex
 
