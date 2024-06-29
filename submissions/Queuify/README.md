@@ -24,7 +24,7 @@ I originally used the Swift Playgrounds app on my ipad before transfering my pro
 
 **Testflight link**: https://testflight.apple.com/join/NhX4bY5F 
 
-**How many users on testflight?**: 16 (testers in the external group with 14 in the internal group) 
+**How many users on testflight?**: 6 (16 testers invited in the external group with 14 in the internal group) 
 
 **Ship URL**: https://hackclub.slack.com/archives/C01504DCLVD/p1719671642188329 (from #scrapbook channel) 
 
