@@ -78,8 +78,6 @@ export default function Home() {
             value="Sign up for the grant"
             className="text-white bg-red px-4 py-2 font-medium text-lg font-sans text-center rounded-lg cursor-pointer"
           />
-          <h1>Hack Club Cider</h1>
-          <p>B</p>
         </form>
       </div>
       <section
