@@ -22,4 +22,4 @@ Create a new directory in this folder with the name of your app. Inside the dire
 
 **Ship URL**: https://hackclub.slack.com/abc
 
-**Video Demo URL**: https://youtube.com/xyz
+**Video Demo URL**: [https://youtube.com/xyz](https://www.youtube.com/gxe)
