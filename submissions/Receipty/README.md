@@ -1,25 +1,20 @@
-# iOS App Submissions
+**Name**: Receipty
 
-Create a new directory in this folder with the name of your app. Inside the directory, create a markdown file with the name `README.md` and include the following details:
+**Description**: Receipty is an app that bascially allows you to snap your Reciepts, place them all into one application, add details into them, and then keep them organised. Thing is me and my family recently moved to Abu Dhabi, so my dad was having a hard time keeping his reciepts etc. becuase they WERE SO MANY. So I made this app for him and I found him using it a lot nowadays as it allows him to manage his finances very easily, and all in one place. He prev. used to just store them in files but you know its not as fast as Receipty with respect to adding reciepts on the spot, tags, details, price, date etc. This is what the app is and what problem it solved.
 
----
+**GitHub URL**: https://github.com/muhammadanas0716/Receipty
 
-**Name**: Cool Recipes
+**How did you build this**: Oh, first and foremost did the course on Swift and SwiftUI by Sean Allen, and then just hopped on to make this project. Did not have a lot of experience before. Did breifly work on Swift around 3 years ago but don't recall that much. I will not lie, I also took help from chatGPT and my followers on X (Twitter). I got stuck often and had to do this!
 
-**Description**: What is this app? How does it help you? What problem does it solve for you and your friends?
+**How many hours did you spend on this**: Idk, took me around a week, few hours everyday.
 
-**GitHub URL**: https://github.com/cooldude/recipe
+**Did you use #arcade to log your progress?**: Nope
 
-**How did you build this**: I used Swift UI to build the app. Followed a bunch of guides and tutorials online and then when I felt comfortable, started building my own version of the app.
+**Testflight link**: https://testflight.apple.com/join/fX9bQCfM
 
-**How many hours did you spend on this**: 23 hours
+**How many users on testflight?**: 29
 
-**Did you use #arcade to log your progress?**: Yes / No
+**Ship URL**: [https://hackclub.slack.com/abc](https://hackclub.slack.com/archives/C0M8PUPU6/p1721133911009079)
 
-**Testflight link**:
+**Video Demo URL**: [YouTube Video](https://youtube.com/shorts/RgPRzlvEwiE?feature=share)
 
-**How many users on testflight?**:
-
-**Ship URL**: https://hackclub.slack.com/abc
-
-**Video Demo URL**: [https://youtube.com/xyz](https://www.youtube.com/gxe)
