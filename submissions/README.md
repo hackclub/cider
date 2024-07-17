@@ -1,25 +1,20 @@
-# iOS App Submissions
+**Name**: Pomotime
 
-Create a new directory in this folder with the name of your app. Inside the directory, create a markdown file with the name `README.md` and include the following details:
+**Description**: It is an app to use the Pomodoro Method, focusing on simplicity and being able to start it up and use it quickly.
 
----
+**GitHub URL**: https://github.com/Yeffian/swift-pomodoro
 
-**Name**: Cool Recipes
+**How did you build this**: I started learning Swift a month ago, and this was an idea I just decided to make as practice, and then realized this is useful enough to publish this myself.
 
-**Description**: What is this app? How does it help you? What problem does it solve for you and your friends?
+**How many hours did you spend on this**: around 27-28(?)
 
-**GitHub URL**: https://github.com/cooldude/recipe
+**Did you use #arcade to log your progress?**: Yes
 
-**How did you build this**: I used Swift UI to build the app. Followed a bunch of guides and tutorials online and then when I felt comfortable, started building my own version of the app.
+**Testflight link**: https://testflight.apple.com/join/snAnckxg
 
-**How many hours did you spend on this**: 23 hours
-
-**Did you use #arcade to log your progress?**: Yes / No
-
-**Testflight link**:
-
-**How many users on testflight?**:
+**How many users on testflight?**: 0
 
 **Ship URL**: https://hackclub.slack.com/abc
 
 **Video Demo URL**: [https://youtube.com/xyz](https://www.youtube.com/gxe)
+](https://hackclub.slack.com/abc)
