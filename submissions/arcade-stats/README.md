@@ -16,7 +16,7 @@ for easy scrapbooking, view their total time to share with others, or track thei
 
 **Testflight link**: https://testflight.apple.com/join/J6v0ZcbP
 
-**How many users on testflight?**: 4
+**How many users on testflight?**: 8
 
 **Ship URL**: https://hackclub.slack.com/archives/C0M8PUPU6/p1721847851518359 (URL of your slack post in the #ship channel on Hack Club Slack)
 
