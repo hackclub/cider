@@ -6,7 +6,7 @@
 **Description**: Arcade Stats is an app designed to allow users to keep track of all their Arcade data, streamlined into one location. Whether they want to keep track of their session history 
 for easy scrapbooking, view their total time to share with others, or track their progress towards items that they would like to get. 
 
-**GitHub URL**: https://github.com/cooldude/recipe
+**GitHub URL**: https://github.com/mjh316/Arcade
 
 **How did you build this**: I used Swift UI to build the app. Followed a bunch of guides and tutorials online and then when I felt comfortable, started building my own version of the app.
 
