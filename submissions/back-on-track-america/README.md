@@ -3,7 +3,7 @@
 **Description:** The Back on Track America mobile app is app made to help coordinate the events and communications of
 Back on Track America (temporary site at https://backontracktampa.wixsite.com/my-site), a nonprofit organization dedicated to
 serving the homeless and those suffering from food insecurity by coordinating student volunteers in several communities.
-It allows volunteers to sign up for their location, recieve announcements from location leaders, and discuss upcoming events.
+It allows volunteers to sign up for their location, receive announcements from location leaders, and discuss upcoming events.
 
 **GitHub URL:** https://github.com/Back-on-Track-America/app
 
@@ -19,8 +19,8 @@ react-navigation and nativewind to make it work.
 
 **Testflight link:** https://testflight.apple.com/join/AGWWz672
 
-**How many users on testflight?:** 13
+**How many users on testflight?:** 14
 
-**Ship URL:** 
+**Ship URL:** https://hackclub.slack.com/archives/C0M8PUPU6/p1722391701058519
 
-**Video Demo URL:** 
+**Video Demo URL:** https://youtu.be/ppXDlS_ZUVE
