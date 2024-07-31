@@ -5,10 +5,10 @@ Back on Track America (temporary site at https://backontracktampa.wixsite.com/my
 serving the homeless and those suffering from food insecurity by coordinating student volunteers in several communities.
 It allows volunteers to sign up for their location, receive announcements from location leaders, and discuss upcoming events.
 
-**GitHub URL:** https://github.com/Back-on-Track-America/app
+**GitHub URL:** https://github.com/backontrackus/app
 
 **How did you build this:** I used React Native and Expo on the frontend to build this app,
-combined with [Pocketbase](https://pocketbase.io/) and some custom Go logic (at https://github.com/Back-on-Track-America/backend)
+combined with [Pocketbase](https://pocketbase.io/) and some custom Go logic (at https://github.com/backontrackus/backend)
 on the backend. I was a little familiar with React Native before this, but I really learned how to build a complete
 cross-platform mobile app while building this. The Expo docs were pretty good, and I used a variety of other packages like
 react-navigation and nativewind to make it work.
