@@ -10,7 +10,7 @@ How many hours did you spend on this: Around 20 hours, but a bunch didn't get ap
 
 Did you use #arcade to log your progress?: Yes
 
-Testflight link: (none rn, still waiting for review)
+Testflight link: https://testflight.apple.com/join/FfS1Zjnw
 
 How many users on testflight?: 1 😭
 
