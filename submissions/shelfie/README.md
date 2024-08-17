@@ -6,7 +6,7 @@ GitHub URL: https://github.com/mikidoodle/shelfie
 
 How did you build this: I used React Native with Expo. Didn't use any tutorials because it's fairly simple and I've had experience with it before, but I used the Expo website to get instructions on building the project to publish it.
 
-How many hours did you spend on this: 35 hours
+How many hours did you spend on this: 36 hours
 
 Did you use #arcade to log your progress?: Yes
 
