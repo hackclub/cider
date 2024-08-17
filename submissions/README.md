@@ -20,6 +20,6 @@ Create a new directory in this folder with the name of your app. Inside the dire
 
 **How many users on testflight?**:
 
-**Ship URL**: https://hackclub.slack.com/abc
+**Ship URL**: https://hackclub.slack.com/abc (URL of your slack post in the #ship channel on Hack Club Slack)
 
 **Video Demo URL**: [https://youtube.com/xyz](https://www.youtube.com/gxe)
