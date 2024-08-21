@@ -13,7 +13,7 @@ Did you use #arcade to log your progress?: No
 Testflight link: https://testflight.apple.com/join/TOGLa8wj  
 Test Accounts: 1. test@test.com - Test1234, 2. other@test.com - Other1234
 
-How many users on testflight?: 5
+How many users on testflight?: 6
 
 Ship URL: https://hackclub.slack.com/archives/C0M8PUPU6/p1724255865120369  
 Video Demo URL: https://youtu.be/6jI0irJvOYA?si=hG_g0TTXLPkSJa4c
