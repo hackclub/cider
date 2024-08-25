@@ -11,7 +11,7 @@ family and I had to queue 4 hours to get tickets for a museum (Vatican). I belie
 save time and make everyone's lives more fun! 
 
 
-**GitHub URL**: 
+**GitHub URL**: https://github.com/jenniferZO/Queuify_XcodeSwiftApp
 
 **How did you build this**:
 This was the first time I developed an app and the first time I used Swift programming language. In the
