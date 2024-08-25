@@ -11,7 +11,7 @@ family and I had to queue 4 hours to get tickets for a museum (Vatican). I belie
 save time and make everyone's lives more fun! 
 
 
-**GitHub URL**: https://github.com/jenniferZO/Queue
+**GitHub URL**: 
 
 **How did you build this**:
 This was the first time I developed an app and the first time I used Swift programming language. In the
@@ -28,4 +28,4 @@ I originally used the Swift Playgrounds app on my ipad before transfering my pro
 
 **Ship URL**: https://hackclub.slack.com/archives/C01504DCLVD/p1719671642188329 (from #scrapbook channel) 
 
-**Video Demo URL**: https://youtube.com/shorts/bZ-mLWVNC8k  
+**Video Demo URL**: https://youtu.be/k7sDmg82gK0
