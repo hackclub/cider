@@ -18,14 +18,14 @@ This was the first time I developed an app and the first time I used Swift progr
 beginning I spent a lot of time watching Youtube videos to learn the language and structure of SwiftUI. 
 I originally used the Swift Playgrounds app on my ipad before transfering my project to Xcode on a school Mac. 
 
-**How many hours did you spend on this**: 40+ hours 
+**How many hours did you spend on this**: 60+ hours 
 
 **Did you use #arcade to log your progress?**: Yes but only at the end
 
-**Testflight link**: https://testflight.apple.com/join/NhX4bY5F 
+**Testflight link**: 
 
-**How many users on testflight?**: 6 (16 testers invited in the external group with 14 in the internal group) 
+**How many users on testflight?**: 
 
-**Ship URL**: https://hackclub.slack.com/archives/C01504DCLVD/p1719671642188329 (from #scrapbook channel) 
+**Ship URL**: https://hackclub.slack.com/archives/C0M8PUPU6/p1724594729825269 
 
 **Video Demo URL**: https://youtu.be/k7sDmg82gK0
