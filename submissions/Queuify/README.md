@@ -22,10 +22,10 @@ I originally used the Swift Playgrounds app on my ipad before transfering my pro
 
 **Did you use #arcade to log your progress?**: Yes but only at the end
 
-**Testflight link**: 
+**Testflight link**: https://testflight.apple.com/join/rdH7uPGJ (currently not connected to firestore due to changes in bundle ID so integar values will remain 0. But will be corrected by noon on Sunday.) 
 
-**How many users on testflight?**: 
+**How many users on testflight?**: 2 
 
 **Ship URL**: https://hackclub.slack.com/archives/C0M8PUPU6/p1724594729825269 
 
-**Video Demo URL**: https://youtu.be/k7sDmg82gK0
+**Video Demo URL**: https://youtu.be/_2VqyQuTa9I 
