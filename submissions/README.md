@@ -4,22 +4,22 @@ Create a new directory in this folder with the name of your app. Inside the dire
 
 ---
 
-**Name**: Waffle
+**Name**: Cool Recipes
 
-**Description**: Waffle is a group chat app. It is end-to-end encrypted, uses firebase's secure protocols to ensure user data is safe, and uses google to sign in.
+**Description**: What is this app? How does it help you? What problem does it solve for you and your friends?
 
-**GitHub URL**: https://github.com/ayaangrover/waffle
+**GitHub URL**: https://github.com/cooldude/recipe
 
-**How did you build this**: I used SwiftUI to build the app. This is my second app in swift/swiftui. The first one I used tutorials and AI to understand, but for Waffle the code is entirely my own.
+**How did you build this**: I used Swift UI to build the app. Followed a bunch of guides and tutorials online and then when I felt comfortable, started building my own version of the app.
 
-**How many hours did you spend on this**: 15
+**How many hours did you spend on this**: 23 hours
 
-**Did you use #arcade to log your progress?**: Yes
+**Did you use #arcade to log your progress?**: Yes / No
 
-**Testflight link**: https://testflight.apple.com/join/rZX6gzwS
+**Testflight link**:
 
-**How many users on testflight?**: 8 users have used my app. Not all of them remain testers, some wanted to be removed. I'm not sure why.
+**How many users on testflight?**:
 
-**Ship URL**: https://hackclub.slack.com/archives/C0M8PUPU6/p1724640168506099
+**Ship URL**: https://hackclub.slack.com/abc (URL of your slack post in the #ship channel on Hack Club Slack)
 
-**Video Demo URL**: [Google Drive video link]([url](https://drive.google.com/file/d/1iaLhxWsecGlgYKz9Lmx7lLov1CQO3xOZ/view?usp=sharing))
+**Video Demo URL**: [https://youtube.com/xyz](https://www.youtube.com/gxe)
