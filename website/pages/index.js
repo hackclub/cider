@@ -36,7 +36,7 @@ export default function Home() {
       </a>
       <div className="w-full h-full flex flex-col items-center gradient-bg min-h-screen">
         <section className="flex flex-col items-center justify-center min-h-[90vh] gap-4 w-10/12 lg:w-1/3">
-          <h2 className="text-2xl">Beta running from June 1st to June 30th</h2>
+          <h2 className="text-2xl">Now running until August 31st</h2>
           <img src="/logo.svg" />
           <h2 className="text-4xl text-center">
             <Balancer ratio={0.2} className="">
