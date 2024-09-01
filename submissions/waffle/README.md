@@ -10,7 +10,7 @@
 
 **Did you use #arcade to log your progress?**: Yes
 
-**Testflight link**: [https://testflight.apple.com/join/rZX6gzwS](https://testflight.apple.com/join/XWN8vytA)
+**Testflight link**: [https://testflight.apple.com/join/XWN8vytA](https://testflight.apple.com/join/XWN8vytA)
 
 **How many users on testflight?**: 8 users have used my app. Not all of them remain testers, some wanted to be removed. I'm not sure why.
 
