@@ -11,7 +11,7 @@ export const faqs = [
   {
     question: "Who is eligible?",
     answer:
-      "You need to be a high schooler (or younger). Submissions need to be in by August 31st to qualify.",
+      "You need to be a high schooler (or younger).",
   },
   {
     question: "What do I need?",
