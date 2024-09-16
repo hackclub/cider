@@ -26,7 +26,6 @@ A $100 grant for an Apple Developer Membership.
 - The app must have some sort of data management system, using either local storage, cloud databases, or APIs.
 - The app could involve integrating with external APIs, or using advanced features of React Native or SwiftUI.
 - The app should have a clean, user-friendly design that is easy to navigate and visually appealing.
-- The app must be submitted by August 31st, 2024 to be considered for the grant.
 
 ## Make Your PR
 
