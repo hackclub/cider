@@ -43,3 +43,11 @@ footer a {
 .gradient-bg {
   background: radial-gradient(circle, #ffb74d 0%, #ff8a65 50%, #d84315 100%);
 }
+
+.carousel .slide img {
+  width: auto !important;
+}
+
+.carousel img {
+  width: auto !important;
+}
