@@ -1,6 +1,6 @@
 # Hack Club Cider
 
-A $100 grant for an Apple Developer Membership. Beta running from June 1st to June 30th.
+A $100 grant for an Apple Developer Membership.
 
 ![banner](/website/public/banner.png)
 
@@ -9,9 +9,7 @@ A $100 grant for an Apple Developer Membership. Beta running from June 1st to Ju
 **Prompt:** Build an app that improves an aspect of your (and your friends’) lives
 
 1. **Submit an app demo and we'll help you get it on testflight** - [Form link](https://forms.hackclub.com/t/jALEZHqGE2us)
-2. Next Step:
-   1. **Build your app** - Build your app to flesh it out even more and try to meet all the submission requirements.
-   2. **Get 25 users** - Get 25 users using your app while it's in TestFlight.
+2. **Build your app** - Build your app to flesh it out even more and try to meet all the submission requirements.
 3. **Submit your app** - Make a pull request adding a folder with your app's name in the `submissions` folder.
 4. **Launch your app** - Get $100 to buy an Apple Developer Membership and publish your app on the App Store.
 
@@ -19,14 +17,12 @@ A $100 grant for an Apple Developer Membership. Beta running from June 1st to Ju
 
 - Your app must be open-source, original, unique & built using either React Native or SwiftUI
 - It is recommended to use #hack-hour to log your progress while building the app.
-- Your app must have 25 users using your app while it's in TestFlight.
 - The app should solve a real problem or add significant value to the users' lives. Describe how the app will impact its users and what specific issues it addresses.
 - The app should have at least five unique screens (e.g., home, profile, settings, notifications, and a feature-specific screen).
 - The app must include at least three core features that work together to create a cohesive experience. For example, a social network app could include user profiles, a news feed, and direct messaging.
 - The app must have some sort of data management system, using either local storage, cloud databases, or APIs.
 - The app could involve integrating with external APIs, or using advanced features of React Native or SwiftUI.
 - The app should have a clean, user-friendly design that is easy to navigate and visually appealing.
-- The app must be submitted by June 30th, 2024 to be considered for the grant.
 
 ## Make Your PR
 
