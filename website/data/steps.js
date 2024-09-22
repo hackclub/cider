@@ -10,10 +10,6 @@ export const steps = [
     description: "Flesh out your app even more and try to meet all the submission requirements.",
   },
   {
-    heading: "Get 25 users",
-    description: "Obtain 25 users using your app while it's in TestFlight.",
-  },
-  {
     heading: "Submit your app",
     description:
       "Make a pull request adding a folder with your app's name in the submissions folder.",
