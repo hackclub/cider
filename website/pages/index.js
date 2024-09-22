@@ -9,6 +9,7 @@ import { requirements } from "../data/requirements";
 import { projects } from "../data/projects";
 import Question from "../components/Question";
 import { faqs } from "../data/faqs";
+import { SubmissionCard } from "./submissions";
 
 export default function Home() {
   const { handleSubmit, control } = useForm();
@@ -24,7 +25,8 @@ export default function Home() {
     alert("Your email has been submitted! 🎉");
   };
 
-  const { data } = useSWR("/api/time", fetcher);
+  const { data } = useSWR("/api/submissions", fetcher);
+  const submissions = (data || []).reverse().slice(0, 3);
 
   return (
     <main className="flex flex-col items-center">
@@ -36,7 +38,6 @@ export default function Home() {
       </a>
       <div className="w-full h-full flex flex-col items-center gradient-bg min-h-screen">
         <section className="flex flex-col items-center justify-center min-h-[90vh] gap-4 w-10/12 lg:w-1/3">
-          <h2 className="text-2xl">Now running until August 31st</h2>
           <img src="/logo.svg" />
           <h2 className="text-4xl text-center">
             <Balancer ratio={0.2} className="">
@@ -144,11 +145,17 @@ export default function Home() {
           src="/apple-with-friends.png"
           className="w-1/2 md:w-1/4 lg:w-[12%] -mt-16 mb-0 mx-auto"
         /> */}
-        <div className="flex flex-col lg:flex-row lg:flex-wrap gap-4">
-          {projects.map((project, index) => (
-            <Project key={index} {...project} />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {submissions.map((submission, index) => (
+            <SubmissionCard key={index} submission={submission} />
           ))}
         </div>
+        <a
+          href="/submissions"
+          className="text-red xl:text-lg font-medium rounded-full border-2 border-red px-4 py-2 text-xl font-sans text-center w-fit mt-4 hover:bg-red hover:text-white"
+        >
+          View all submissions
+        </a>
       </section>
       <section className="my-20 lg:mt-40 flex flex-col justify-center gap-4 w-11/12 lg:w-2/3">
         <h1 className="badge">Frequently Asked Questions</h1>
