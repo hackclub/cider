@@ -10,6 +10,7 @@ import { projects } from "../data/projects";
 import Question from "../components/Question";
 import { faqs } from "../data/faqs";
 import { SubmissionCard } from "./submissions";
+import Head from "../components/head.js";
 
 export default function Home() {
   const { handleSubmit, control } = useForm();
@@ -30,6 +31,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col items-center">
+      <Head/>
       <a href="http://hackclub.com">
         <img
           src="/flag.svg"
