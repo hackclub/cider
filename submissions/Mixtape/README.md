@@ -11,15 +11,15 @@ Additionally, Mixtape also allows users to create more typical journal entries. 
 
 **How did you build this**: I used SwiftUI to build the app. I started by using Figma to prototype some design ideas, and also used Blender and Figma to create the app artwork. I used Apple's MusicKit and the Spotify Web API to integrate music capabilities within the app. I mostly followed the Apple SwiftUI tutorials to help learn iOS development.
 
-**How many hours did you spend on this**: 150+ hours
+**How many hours did you spend on this**: 100+ hours
 
 **Did you use #hack-hour to log your progress?**: No
 
 **Testflight link**: [https://testflight.apple.com/join/3XQcCWMS](https://testflight.apple.com/join/3XQcCWMS)
 
-**How many users on testflight?**:
+**How many users on testflight?**: 5
 
-**Ship URL**: https://hackclub.slack.com/abc (URL of your slack post in the #ship channel on Hack Club Slack)
+**Ship URL**: [https://hackclub.slack.com/archives/C0M8PUPU6/p1729778453249509](https://hackclub.slack.com/archives/C0M8PUPU6/p1729778453249509)
 
 **Video Demo URL**: [https://youtube.com/xyz](https://www.youtube.com/gxe)
 
