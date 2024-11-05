@@ -17,9 +17,9 @@ Additionally, Mixtape also allows users to create more typical journal entries. 
 
 **Testflight link**: [https://testflight.apple.com/join/3XQcCWMS](https://testflight.apple.com/join/3XQcCWMS)
 
-**How many users on testflight?**: 5
+**How many users on testflight?**: 8
 
 **Ship URL**: [https://hackclub.slack.com/archives/C0M8PUPU6/p1729778453249509](https://hackclub.slack.com/archives/C0M8PUPU6/p1729778453249509)
 
-**Video Demo URL**: [https://youtube.com/xyz](https://www.youtube.com/gxe)
+**Video Demo URL**: [https://youtu.be/V0DqHvdL00E](https://youtu.be/V0DqHvdL00E)
 
