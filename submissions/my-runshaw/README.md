@@ -8,7 +8,7 @@
 
 **How many hours did you spend on this**: ~30 to 35 hours
 
-**Did you use #hack-hour to log your progress?**: Ye (but I started before high seas)
+**Did you use #hack-hour to log your progress?**: Yes (but I started before high seas so not all of it is there)
 
 **Testflight link**: https://testflight.apple.com/join/JCwSXDKK
 
