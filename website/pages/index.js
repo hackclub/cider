@@ -40,6 +40,17 @@ export default function Home() {
       </a>
       <div className="w-full h-full flex flex-col items-center gradient-bg min-h-screen">
         <section className="flex flex-col items-center justify-center min-h-[90vh] gap-4 w-10/12 lg:w-1/3">
+        <div
+            className="flex"
+          > 
+            <a
+              href="https://hackclub.slack.com/archives/C0266FRGT/p1734556517730159"
+              target="_blank"
+              className=" rounded-full border-2 border-red px-4 py-2 font-medium text-xl font-sans text-center w-fit mt-4 !text-white bg-red"
+            >
+              Cider Holiday Event in Progress! ❄️ (Check the announcement on Slack)
+            </a>
+          </div>
           <img src="/logo.svg" />
           <h2 className="text-4xl text-center">
             <Balancer ratio={0.2} className="">
@@ -61,22 +72,6 @@ export default function Home() {
             >
               Submit&nbsp;PR
             </a>
-          </div>
-          <div
-            className="absolute top-[40px] left-1/2 transform -translate-x-1/2 bg-red w-auto px-4 py-2 rounded-full text-center shadow-md z-[1000] cursor-pointer"
-          >
-            <div
-              className="font-bold text-xl font-sans text-[#FFFFFF] tracking-wider"
-            >
-              Cider Holiday Event in Progress! ❄️
-              <a
-                href="https://hackclub.slack.com/archives/C0266FRGT/p1734556517730159"
-                target="_blank"
-                clasName="no-underline text-inherit"
-              >
-                (Check the announcement on Slack)
-              </a>
-            </div>
           </div>
         </section>
         <form
