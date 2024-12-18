@@ -31,7 +31,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col items-center">
-      <Head/>
+      <Head />
       <a href="http://hackclub.com">
         <img
           src="/flag.svg"
@@ -62,8 +62,27 @@ export default function Home() {
               Submit&nbsp;PR
             </a>
           </div>
+          <div
+            className="absolute top-[40px] left-1/2 transform -translate-x-1/2 bg-red w-auto px-4 py-2 rounded-full text-center shadow-md z-[1000] cursor-pointer"
+          >
+            <div
+              className="font-bold text-xl font-sans text-[#FFFFFF] tracking-wider"
+            >
+              Cider Holiday Event in Progress! ❄️
+              <a
+                href="https://hackclub.slack.com/archives/C0266FRGT/p1734556517730159"
+                target="_blank"
+                clasName="no-underline text-inherit"
+              >
+                (Check the announcement on Slack)
+              </a>
+            </div>
+          </div>
         </section>
-        <form className="flex flex-col sm:flex-row gap-2 mb-10" onSubmit={handleSubmit(onSubmit)}>
+        <form
+          className="flex flex-col sm:flex-row gap-2 mb-10"
+          onSubmit={handleSubmit(onSubmit)}
+        >
           <Controller
             name="email"
             control={control}
@@ -101,16 +120,22 @@ export default function Home() {
           {steps.map(({ heading, description, link, primary }, index) => (
             <div
               key={index}
-              className={`flex flex-col xl:justify-between xl:w-1/2 gap-1 bg-soft-white xl:p-5 xl:border xl:rounded-xl z-10 xl:shadow-lg ${
-                primary ? "xl:border-red xl:scale-110" : "xl:border-gray-300"
-              }`}
+              className={`flex flex-col xl:justify-between xl:w-1/2 gap-1 bg-soft-white xl:p-5 xl:border xl:rounded-xl z-10 xl:shadow-lg ${primary ? "xl:border-red xl:scale-110" : "xl:border-gray-300"
+                }`}
             >
               <div className="flex flex-col">
-                <h3 className="text-xl xl:text-2xl font-semibold text-red">{heading}</h3>
-                <p className="text-base xl:text-lg font-medium text-gray-700">{description}</p>
+                <h3 className="text-xl xl:text-2xl font-semibold text-red">
+                  {heading}
+                </h3>
+                <p className="text-base xl:text-lg font-medium text-gray-700">
+                  {description}
+                </p>
               </div>
               {link && (
-                <a href={link} className="text-red text-base xl:text-lg font-medium">
+                <a
+                  href={link}
+                  className="text-red text-base xl:text-lg font-medium"
+                >
                   Submit{" "}
                   <svg
                     width="24"
@@ -142,7 +167,9 @@ export default function Home() {
         </div>
       </section>
       <section className="my-14 flex flex-col lg:items-center gap-10 justify-center w-5/6 lg:w-11/12">
-        <h2 className="text-6xl text-center">Cider tastes better with friends...</h2>
+        <h2 className="text-6xl text-center">
+          Cider tastes better with friends...
+        </h2>
         {/* <img
           src="/apple-with-friends.png"
           className="w-1/2 md:w-1/4 lg:w-[12%] -mt-16 mb-0 mx-auto"
@@ -169,7 +196,9 @@ export default function Home() {
       </section>
       <section className="mb-20 lg:my-20 flex flex-col justify-center gap-4 w-5/6 lg:w-2/3">
         <h2 className="text-5xl">
-          <Balancer>Design, Code, And Ship an iOS app to the App Store in 30 days</Balancer>
+          <Balancer>
+            Design, Code, And Ship an iOS app to the App Store in 30 days
+          </Balancer>
         </h2>
         <form className="flex flex-col my-4" onSubmit={handleSubmit(onSubmit)}>
           <Controller
