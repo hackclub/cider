@@ -15,6 +15,8 @@
 
 **How many users on testflight?**: 2
 
-**Ship URL**: https://hackclub.slack.com/abc (URL of your slack post in the #ship channel on Hack Club Slack)
+**Ship URL**: [https://hackclub.slack.com/abc (URL of your slack post in the #ship channel on Hack Club Slack)](https://hackclub.slack.com/archives/C0M8PUPU6/p1735138777885049)
 
-**Video Demo URL**: [https://youtube.com/xyz](https://www.youtube.com/gxe)
+**Video Demo URL**: 
+
+https://github.com/user-attachments/assets/f6f861f8-19b9-46d8-b988-97ee046efca1
