@@ -5,7 +5,7 @@ the current demand for lo-fi music in youtube is very high. so this app not only
 
 **GitHub URL**: https://github.com/Tech-with-anmol/usider
 
-**How did you build this**: I built this using react native and expo. I for most part used official docs and few videos(rarely). And i mostly developed the app and learnt the app at same time.
+**How did you build this**: I built this using react native and expo. I, for most part used official docs and few videos(rarely). And i mostly developed the app and learnt the react native at same time.
 
 **How many hours did you spend on this**: 30 hours
 
@@ -17,4 +17,4 @@ the current demand for lo-fi music in youtube is very high. so this app not only
 
 **Ship URL**: https://hackclub.slack.com/archives/C0M8PUPU6/p1735279648025579
 
-**Video Demo URL**: [https://drive.google.com/file/d/1ptkx76OLODoy7qODd6Eov6Ihwql-TrH4/view?usp=drive_link]
+**Video Demo URL**: https://drive.google.com/file/d/1ptkx76OLODoy7qODd6Eov6Ihwql-TrH4/view?usp=drive_link
