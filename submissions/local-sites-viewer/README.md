@@ -16,9 +16,9 @@ scans active ports, and shows you a list of working local sites.
 
 **Did you use #hack-hour to log your progress?**: No :'( I used wakatime
 
-**Testflight link**:
+**Testflight link**: https://testflight.apple.com/join/3vqA1Xeg
 
-**How many users on testflight?**:
+**How many users on testflight?**: 1
 
 **Ship URL**: i didn't ship it yet, i want to know if i should add or edit anything to the app
 
