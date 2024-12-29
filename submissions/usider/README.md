@@ -11,9 +11,9 @@ the current demand for lo-fi music in youtube is very high. so this app not only
 
 **Did you use #hack-hour to log your progress?**: No, i used wakatime
 
-**Testflight link**: https://testflight.apple.com/join/aAdz9fsT
+**Testflight link**: https://testflight.apple.com/join/aAdz9fsTf
 
-**How many users on testflight?**: 1
+**How many users on testflight?**: 2
 
 **Ship URL**: https://hackclub.slack.com/archives/C0M8PUPU6/p1735279648025579
 
