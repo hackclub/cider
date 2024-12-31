@@ -12,10 +12,16 @@
 
 **Did you use #hack-hour to log your progress?**: Kinda? (High Seas Hackatime)
 
-**Testflight link**: https://testflight.apple.com/join/fXkBWR4a
+**Testflight link**: [https://testflight.apple.com/join/fXkBWR4a](https://testflight.apple.com/join/5HjXAA3x)
 
 **How many users on testflight?**: 3 (me + some friends)
 
 **Ship URL**: [URL](https://hackclub.slack.com/archives/C0M8PUPU6/p1734924261169009)
 
 **Video Demo URL**: [Link (Sorry its a short!)](https://youtube.com/shorts/Ccu1nj9xuYs)
+
+**Features:**
+1. Tracking of carbon emissions
+2. Tracking of air travels' carbon emissions
+3. Credits system for easier comparisons
+4. Leaderboards for comparions
