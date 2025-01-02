@@ -17,3 +17,5 @@ How many users on testflight?: 0
 Ship URL: https://hackclub.slack.com/archives/C0M8PUPU6/p1735789251197149
 
 Video Demo URL: https://youtu.be/92FTPFfvx18
+
+Video Demo URL v2: https://youtu.be/yseop11u5Uc
