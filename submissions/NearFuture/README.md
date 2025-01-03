@@ -6,7 +6,7 @@
 
 **How did you build this**: This app is built using Swift and SwiftUI, using UserDefaults and iCloud for persistence.
 
-**How many hours did you spend on this**: 26 hours
+**How many hours did you spend on this**: 39 hours
 
 **Did you use wakatime to log your progress?**: Yes
 
@@ -14,6 +14,6 @@
 
 **How many users on testflight?**: 4
 
-**Ship URL**: [#high-seas-ships](https://hackclub.slack.com/archives/C07UA18MXBJ/p1735672646296699)
+**Ship URL**: [#high-seas-ships]([https://hackclub.slack.com/archives/C07UA18MXBJ/p1735672646296699](https://hackclub.slack.com/archives/C07UA18MXBJ/p1735939681156479))
 
-**Video Demo URL**: [video](https://cloud-1laq0dbz3-hack-club-bot.vercel.app/0screenrecording_01-01-2025_11-26-13_1.mp4)
+**Video Demo URL**: [video](https://cloud-adin7t0t5-hack-club-bot.vercel.app/0screenrecording_01-03-2025_21-00-42_1.mp4)
