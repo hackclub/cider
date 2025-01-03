@@ -42,7 +42,7 @@ export default function Footer() {
         </div>
       </div>
       <br></br>
-      <p>© 2024 Hack Club. 501(c)(3) nonprofit (EIN: 81-2908499).</p>
+      <p>© 2025 Hack Club. 501(c)(3) nonprofit (EIN: 81-2908499).</p>
     </footer>
   );
 }
