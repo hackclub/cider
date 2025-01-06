@@ -13,6 +13,6 @@ Did you use wakatime to log your progress?:  No
 
 App Store link: [https://apps.apple.com/sk/app/spacesync/id6498710377](https://apps.apple.com/sk/app/spacesync/id6498710377)
 
-Ship URL: [https://apps.apple.com/sk/app/spacesync/id6498710377](https://apps.apple.com/sk/app/spacesync/id6498710377)
+Ship URL: [https://hackclub.slack.com/archives/C0M8PUPU6/p1736122421106419](https://hackclub.slack.com/archives/C0M8PUPU6/p1736122421106419)
 
 Video Demo URL: [https://www.icloud.com/iclouddrive/059B1r--f_BCyBIuLMX07LNJg#ScreenRecording_01-06-2025_07-09-38_1](https://www.icloud.com/iclouddrive/059B1r--f_BCyBIuLMX07LNJg#ScreenRecording_01-06-2025_07-09-38_1)
