@@ -14,6 +14,6 @@ Testflight link:
 
 How many users on testflight?:
 
-Ship URL: 
+Ship URL: https://hackclub.slack.com/archives/C07UA18MXBJ/p1738106570240529
 
 Video Demo URL: https://youtube.com/shorts/gPRjs95JjTI
