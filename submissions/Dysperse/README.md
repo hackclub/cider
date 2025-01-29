@@ -1,4 +1,4 @@
-**Name**: Dysperse
+**Name**: Dysperse (www.dysperse.com)
 
 **Description**: Dysperse is a productivity app that adapts to your workflow. Instead of forcing you into a rigid to-do list, it offers smart task management, customizable views, AI-powered organization, and deep integrations with tools like Canvas, Spotify, and Google Calendar. Whether you're a student, professional, or planner, Dysperse helps you stay on top of tasks—your way. 
 
