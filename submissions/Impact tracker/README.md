@@ -10,9 +10,9 @@
 
 **Did you use wakatime to log your progress?**: Yes
 
-**Testflight link**: pending still
+**Testflight link**: [https://testflight.apple.com/join/MPTAetYR](https://testflight.apple.com/join/MPTAetYR)
 
-**How many users on testflight?**: 
+**How many users on testflight?**: 1
 
 **Ship URL**: [https://hackclub.slack.com/archives/C07UA18MXBJ/p1736252182624539](https://hackclub.slack.com/archives/C07UA18MXBJ/p1736252182624539)
 
