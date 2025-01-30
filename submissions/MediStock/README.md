@@ -10,9 +10,9 @@ How many hours did you spend on this: 20+ hours
 
 Did you use wakatime to log your progress?: Mostly
 
-Testflight link:
+Testflight link: https://testflight.apple.com/join/NM7ezukQ
 
-How many users on testflight?:
+How many users on testflight?: just me
 
 Ship URL: https://hackclub.slack.com/archives/C07UA18MXBJ/p1738106570240529
 
