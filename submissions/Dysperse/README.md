@@ -16,4 +16,4 @@
 
 **Ship URL**: https://hackclub.slack.com/archives/C0M8PUPU6/p1738185494536779
 
-**Video Demo URL**: 
+**Video Demo URL**: https://youtu.be/JrjmRNYYRBc
