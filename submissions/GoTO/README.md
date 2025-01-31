@@ -12,7 +12,7 @@
 
 Testflight link:
 
-How many users on testflight?:
+**How many users on testflight?:**  
 
 **Ship URL:** https://hackclub.slack.com/archives/C0M8PUPU6/p1737989407369769
 
