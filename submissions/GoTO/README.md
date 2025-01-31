@@ -10,9 +10,9 @@
 
 **Did you use wakatime to log your progress?:** No
 
-Testflight link:
+**Testflight link:** https://testflight.apple.com/join/UXeRAM55
 
-**How many users on testflight?:**  
+**How many users on testflight?:** Just me!
 
 **Ship URL:** https://hackclub.slack.com/archives/C0M8PUPU6/p1737989407369769
 
