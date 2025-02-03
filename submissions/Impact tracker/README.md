@@ -16,4 +16,4 @@
 
 **Ship URL**: [https://hackclub.slack.com/archives/C07UA18MXBJ/p1736252182624539](https://hackclub.slack.com/archives/C07UA18MXBJ/p1736252182624539)
 
-**Video Demo URL**: [https://cloud-dm9283u75-hack-club-bot.vercel.app/0screenrecording_01-05-2025_17-23-03_1.mp4](https://cloud-dm9283u75-hack-club-bot.vercel.app/0screenrecording_01-05-2025_17-23-03_1.mp4)
+**Video Demo URL**: [https://cloud-kbt8w4d18-hack-club-bot.vercel.app/0screenrecording_01-07-2025_19-04-52_1.mp4](https://cloud-kbt8w4d18-hack-club-bot.vercel.app/0screenrecording_01-07-2025_19-04-52_1.mp4)
