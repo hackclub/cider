@@ -1,6 +1,6 @@
 **Name**: Near Future
 
-**Description**: Near Future is an app to track upcoming events: Birthdays, Trips, Holidays, Weddings etc. The app shows a day counter till each event, and events can be customised with colours, symbols and descriptions to make them truly unique and distinguishable. Tick events off to mark them as completed. Near Future also features iCloud Sync to view and edit your saved events on all your devices. The app also has Widgets for your home screen and supports the Small, Medium and Large sizes.
+**Description**: Near Future is an app to track upcoming events. it shows a day counter, and events have colours, symbols and descriptions. Tick events off to mark them as completed. iCloud Sync to view and edit your saved events on all your devices. The app also has Widgets for your home screen.
 
 **GitHub URL**: https://github.com/neon443/NearFuture
 
