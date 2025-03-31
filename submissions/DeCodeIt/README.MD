@@ -4,7 +4,7 @@ Description: All the Languages, one app. Decode any text into Morse, Binary and 
 
 GitHub URL: https://github.com/Chrissshere/DeCoder/tree/main
 
-How did you build this: I used SwiftUI to build this app in XCode. Thanks to Claude, i managed to fix an issue with my buttons Grid, which caused the buttons to be one into another.
+How did you build this: I used SwiftUI, Firebase, Youtube, and some AI Help to fix bugs into the app. 
 
 How many hours did you spend on this: 21 hours
 Did you use #arcade to log your progress?: No
