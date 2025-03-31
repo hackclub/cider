@@ -11,7 +11,7 @@ Did you use #arcade to log your progress?: No
 
 Testflight link: https://testflight.apple.com/join/Qbg11rdp
 
-How many users on testflight?: 4
+How many users on testflight?: 8, another 8 invited.
 
 Ship URL: None
 
