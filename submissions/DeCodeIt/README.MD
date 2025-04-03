@@ -4,16 +4,16 @@ Description: All the Languages, one app. Decode any text into Morse, Binary and 
 
 GitHub URL: https://github.com/Chrissshere/DeCoder/
 
-How did you build this: I used SwiftUI, Firebase, Youtube, and some AI Help to fix bugs into the app. 
+How did you build this: I used SwiftUI, Firebase, Youtube, and some AI Help to fix bugs into the app. Took restoring 3 archived versions due to issues, and code bugs, NSExceptions, and etc. Around a week or two of development.  
 
-How many hours did you spend on this: over 40 hours
+How many hours did you spend on this: over 52 hours
 
-Did you use hackatime.hackclub.com to log your progress?: Yes, but not all.
+Did you use #hackatime to log your progress?: Yes, but not fully.
 
 Testflight link: https://testflight.apple.com/join/Qbg11rdp
 
-How many users on testflight?: 222 Verified Firebase users, 415 Testers in Testflight, 423 Accepted, 570 Views. 
+How many users on testflight?: 240 Verified Firebase users, 435 Testers in Testflight, 458 Accepted, 616 Views. 
 
-Ship URL: None
+Ship URL: https://hackclub.slack.com/archives/C01504DCLVD/p1743670021679179
 
 Video Demo URL: https://files.fm/u/nevqhagfbu
