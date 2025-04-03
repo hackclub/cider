@@ -16,4 +16,4 @@ How many users on testflight?: 240 Verified Firebase users, 435 Testers in Testf
 
 Ship URL: https://hackclub.slack.com/archives/C01504DCLVD/p1743670021679179
 
-Video Demo URL: https://files.fm/u/nevqhagfbu
+Video Demo URL: https://youtube.com/shorts/JGGTa6F6p5k?feature=share
