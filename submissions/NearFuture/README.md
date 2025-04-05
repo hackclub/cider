@@ -14,6 +14,6 @@
 
 **How many users on testflight?**: 23
 
-**Ship URL**: [#high-seas-ships](https://hackclub.slack.com/archives/C07UA18MXBJ/p1735939681156479)
+**Ship URL**: [high-seas-ships](https://hackclub.slack.com/archives/C07UA18MXBJ/p1735939681156479)
 
-**Video Demo URL**: [video](https://cloud-adin7t0t5-hack-club-bot.vercel.app/0screenrecording_01-03-2025_21-00-42_1.mp4)
+**Video Demo URL**: [video](https://hc-cdn.hel1.your-objectstorage.com/s/v3/8b57bda340c163dea5b3b79bcfb8c3bf9200d5e6_clips25-04-04_09-52.mp4)
