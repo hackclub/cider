@@ -10,14 +10,14 @@
 
 **How did you build this**: I used my own knowledge and a bit of AI.
 
-**How many hours did you spend on this**: around 100 hours
+**How many hours did you spend on this**: all of the versions included: around 40 hours
 
 **Did you use wakatime to log your progress?**: No.
 
 **Testflight link**: https://testflight.apple.com/join/9YTMQcpV
 
-**How many users on testflight?**: 25 when I wrote this readme
+**How many users on testflight?**: 26 Updated: April 7 12:20 GMT+2 CEST
 
 **Ship URL**: https://hackclub.slack.com/archives/C0M8PUPU6/p1743758751075719
 
-**Video Demo URL**: https://youtube.com/shorts/M_MFeEBgOnw?si=xmcl2fUiBSVBgQoN
+**Video Demo URL**: https://youtube.com/shorts/vcprtt2_ozM?si=h2oxouiL6k2sv3Dv
