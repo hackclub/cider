@@ -12,8 +12,6 @@ Create a new directory in this folder with the name of your app. Inside the dire
 
 **How did you build this**: I used Swift UI to build the app. Followed a bunch of guides and tutorials online and then when I felt comfortable, started building my own version of the app.
 
-**How many hours did you spend on this**: 23 hours
-
 **Did you use wakatime to log your progress?**: Yes / No
 
 **Testflight link**:
