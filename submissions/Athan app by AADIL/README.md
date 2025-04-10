@@ -19,7 +19,7 @@ So I decided to build my own app — clean, accurate, and distraction-free.
 - Cities across **Qatar** (with verified prayer times)
 - Global support coming soon, starting with the Gulf
 
-GitHub URL: 
+GitHub URL: https://github.com/aadilnoufal/Athan_app_by_AADIL-ad-free-/tree/main
 
 How did you build this: I used XCode, Swift, and SwiftUI to build this app. I used my prior knowledge of the language, in addition to new topics, tools, and features I discovered while building the app.
 
