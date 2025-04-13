@@ -23,11 +23,11 @@ GitHub URL: https://github.com/aadilnoufal/Athan_app_by_AADIL-ad-free-/tree/main
 
 How did you build this: I used XCode, Swift, and SwiftUI to build this app. I used my prior knowledge of the language, in addition to new topics, tools, and features I discovered while building the app.
 
-How many hours did you spend on this:  30-40 aracade style hours but 10 hakatimable hours
+How many hours did you spend on this:  30-40 aracade style hours but 10.5 hakatimable hours
 
 Did you use wakatime to log your progress?: Yes
 
-Testflight link: N/A
+Testflight link: https://testflight.apple.com/v1/invite/ef31a080c26e4eddba46a55788145b637bb24f417f924e918eda13a5ef0bcab419201f581?ct=P6PV2R9443&advp=10000&platform=ios
 
 Ship URL: N/A
 
