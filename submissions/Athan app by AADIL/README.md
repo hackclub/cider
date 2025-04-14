@@ -27,7 +27,7 @@ How many hours did you spend on this:  30-40 aracade style hours but 10.5 hakati
 
 Did you use wakatime to log your progress?: Yes
 
-Testflight link: https://testflight.apple.com/v1/invite/ef31a080c26e4eddba46a55788145b637bb24f417f924e918eda13a5ef0bcab419201f581?ct=P6PV2R9443&advp=10000&platform=ios
+Testflight link: https://testflight.apple.com/join/WF25ZVDu
 
 Ship URL: N/A
 
