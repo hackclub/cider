@@ -6,7 +6,7 @@
 
 **How did you build this**: I used SwiftUI and a bit of ChatGPT tutoring which helped me learn new things about swiftui(i'm new to swift and swiftui)
 
-**Did you use wakatime to log your progress?**: **Yes** / No - I had 43 hrs 8 min of hackatime and ~6 hrs of research online
+**Did you use wakatime to log your progress?**: **Yes** / No - I had 43 hrs 8 min of hackatime and ~6 hrs of research online. There was ~20 hours of untracked data from before hackatime/wakatime v2 was launched where I didn't have the extension installed.
 
 **Testflight link**: [https://testflight.apple.com/join/15cET7KM](https://testflight.apple.com/join/15cET7KM)
 
