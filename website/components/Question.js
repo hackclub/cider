@@ -1,24 +1,8 @@
 export default function Question({ heading, description }) {
   return (
-    <div className="flex flex-row gap-2">
-      <div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          className="size-5 mt-1 text-gray-500"
-        >
-          <path
-            fillRule="evenodd"
-            d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm11.378-3.917c-.89-.777-2.366-.777-3.255 0a.75.75 0 0 1-.988-1.129c1.454-1.272 3.776-1.272 5.23 0 1.513 1.324 1.513 3.518 0 4.842a3.75 3.75 0 0 1-.837.552c-.676.328-1.028.774-1.028 1.152v.75a.75.75 0 0 1-1.5 0v-.75c0-1.279 1.06-2.107 1.875-2.502.182-.088.351-.199.503-.331.83-.727.83-1.857 0-2.584ZM12 18a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
-            clipRule="evenodd"
-          />
-        </svg>
-      </div>
-      <div className="flex flex-col">
-        <h3 className="text-lg font-medium text-black">{heading}</h3>
-        <p className="font-normal text-sm text-gray-500">{description}</p>
-      </div>
+    <div className="bg-white rounded-lg shadow-md hover:shadow-xl p-6 border border-gray-100 transition-all duration-300 transform hover:-translate-y-1">
+      <h3 className="text-xl font-bold text-hack-black mb-3">{heading}</h3>
+      <p className="text-hack-muted">{description}</p>
     </div>
   );
 }
