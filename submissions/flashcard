@@ -1,0 +1,16 @@
+Name: Flashcard app
+
+
+description:  
+This app makes learning easy. In my app you can learn on your own and together. 
+By either creating your own flashcard sets and practice your own topics. Or practing others flashcard sets. 
+Github url:  https://github.com/KhalilHen/flash-card
+How did i build this?  I used flutter in vscode to build this with supabase as database.
+How many hours did it take?: I don't know how much exactly but i think around 10-20 hours. as i've built a while ago.
+Did you use #arcade to log your progress? No i made this after arcade was ended.
+testFlight link: https://testflight.apple.com/join/rkX2dnbS
+How many users on testflight?: Currently 1 
+ship URL: 
+video demo url: 
+
+
