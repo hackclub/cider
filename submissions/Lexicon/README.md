@@ -6,7 +6,7 @@
 
 **How did you build this**: I used SwiftUI and a bit of ChatGPT tutoring which helped me learn new things about swiftui(i'm new to swift and swiftui)
 
-**Did you use wakatime to log your progress?**: **Yes** / No - I had 43 hrs 8 min of hackatime(via <<LAST_PROJECT>> and Lexicon - figma and postman dont track very well) and ~6 hrs of research online
+**Did you use wakatime to log your progress?**: **Yes** / No - I had 43 hrs 8 min of hackatime and ~6 hrs of research online
 
 **Testflight link**: [https://testflight.apple.com/join/15cET7KM](https://testflight.apple.com/join/15cET7KM)
 
