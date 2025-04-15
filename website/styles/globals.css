@@ -3,6 +3,22 @@
   src: url("/VCGaramond.otf") format("opentype");
 }
 
+@font-face {
+  font-family: 'Phantom Sans';
+  src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff') format('woff'),
+       url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Phantom Sans';
+  src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff') format('woff'),
+       url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,16 +28,48 @@ html {
 }
 
 body {
-  @apply bg-soft-white;
+  @apply bg-hack-smoke font-sans text-hack-black;
 }
 
 h1,
 h2 {
-  @apply font-garamond text-red;
+  @apply font-sans font-bold text-red;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  @apply font-sans text-hack-black;
 }
 
 .badge {
   @apply rounded-md text-red border-2 border-red px-4 py-2 font-medium text-xl font-sans text-center w-fit;
+}
+
+/* Hack Club button styles */
+.btn {
+  @apply rounded-lg px-4 py-2 font-medium text-center transition duration-200 shadow-sm;
+}
+
+.btn-primary {
+  @apply bg-red text-white hover:bg-red/90;
+}
+
+.btn-outline {
+  @apply border-2 border-red text-red hover:bg-red hover:text-white;
+}
+
+.header-gradient {
+  background: linear-gradient(90deg, #ec3750 0%, #ff8c37 100%);
+}
+
+.section-padding {
+  @apply py-12 md:py-16 lg:py-24;
+}
+
+.card {
+  @apply bg-white rounded-xl shadow-md hover:shadow-lg transition duration-200 overflow-hidden;
 }
 
 /* Fixes Tailwind h-screen on iPhones */
@@ -37,11 +85,7 @@ input:focus {
 }
 
 footer a {
-  @apply decoration-dotted underline italic hover:decoration-wavy;
-}
-
-.gradient-bg {
-  background: radial-gradient(circle, #ffb74d 0%, #ff8a65 50%, #d84315 100%);
+  @apply decoration-dotted underline italic hover:decoration-wavy hover:text-red;
 }
 
 .carousel .slide img {

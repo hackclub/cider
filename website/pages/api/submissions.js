@@ -1,6 +1,5 @@
 import Airtable from "airtable";
 
-// Configure Airtable
 const base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(
   process.env.AIRTABLE_BASE_ID
 );
@@ -18,11 +17,13 @@ export default async function handler(req, res) {
       slackId: record.get("Hack Club Slack ID"),
       githubUrl: record.get("Code URL (URL to GitHub / other code host repo)"),
       testflightUrl: record.get("TestFlight URL"),
-      videoDemo: record.get("Live URL (URL to deployed site)"),
+      demoUrl: record.get("Live URL (URL to deployed site)") || record.get("TestFlight URL"),
+      videoDemo: record.get("Video Demo URL"),
+      expoSnackUrl: record.get("Expo Snack URL"),
       images: record.get("Screenshot") || [],
     }));
 
-    res.status(200).json(submissions);
+    res.status(200).json(submissions.reverse());
   } catch (error) {
     console.error("Error fetching submissions:", error);
     res.status(500).json({ error: "Error fetching submissions" });

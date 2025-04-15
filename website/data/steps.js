@@ -17,8 +17,14 @@ export const steps = [
     primary: true,
   },
   {
-    heading: "Launch your app",
+    heading: "Recieve your Apple Developer Membership",
     description:
-      "Receive $100 to buy an Apple Developer Membership and publish your app on the App Store.",
+      "Receive $100 to buy an Apple Developer Membership",
+  },
+  {
+    heading: "Publish your app on the App Store",
+    description:
+      "Publish your app on the App Store and give you a $50 apple gift card.",
+      primary: true,
   },
 ];
