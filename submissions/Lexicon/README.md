@@ -10,7 +10,7 @@
 
 **Testflight link**: [https://testflight.apple.com/join/15cET7KM](https://testflight.apple.com/join/15cET7KM)
 
-**How many users on testflight?**: 3 via testflight, the rest just tried it out on my xcode simulator on my laptop
+**How many users on testflight?**: 3 via testflight, the rest(mom, dad, sister, and ~5 friends) just tried it out on my xcode simulator on my laptop
 
 **Ship URL**: [https://hackclub.slack.com/archives/C0M8PUPU6/p1744759304730359](https://hackclub.slack.com/archives/C0M8PUPU6/p1744759304730359)
 
