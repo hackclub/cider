@@ -1,7 +1,6 @@
 import Balancer from "react-wrap-balancer";
 import { useForm, Controller } from "react-hook-form";
-import useSWR from "swr";
-import fetcher from "../lib/fetcher";
+import { useState } from "react";
 import Footer from "../components/footer";
 import { steps } from "../data/steps";
 import { requirements } from "../data/requirements";
@@ -11,9 +10,128 @@ import { SubmissionCard } from "./submissions";
 import Head from "../components/head.js";
 import Banner from "../components/Banner.js";
 import MetaData from "../components/Meta.js";
+import Airtable from "airtable";
+import { Client } from "@googlemaps/google-maps-services-js";
 
-export default function Home() {
+const geocodeCache = new Map();
+
+const getAirtableBase = () => {
+  return new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(
+    process.env.AIRTABLE_BASE_ID
+  );
+};
+
+async function getCoordinates(city, country) {
+  if (!city && !country) return null;
+  if (!process.env.GOOGLE_MAPS_API_KEY) return null;
+  
+  const cacheKey = `${city || ''}-${country || ''}`;
+  
+  if (geocodeCache.has(cacheKey)) {
+    return geocodeCache.get(cacheKey);
+  }
+  
+  try {
+    const googleMapsClient = new Client({});
+    const locationQuery = [city, country].filter(Boolean).join(", ");
+    
+    const response = await googleMapsClient.geocode({
+      params: {
+        address: locationQuery,
+        key: process.env.GOOGLE_MAPS_API_KEY
+      },
+      timeout: 5000 
+    });
+    
+    if (response.data.results && response.data.results.length > 0) {
+      const location = response.data.results[0].geometry.location;
+      const result = {
+        latitude: location.lat,
+        longitude: location.lng
+      };
+      
+      geocodeCache.set(cacheKey, result);
+      
+      return result;
+    }
+    
+    return null;
+  } catch (error) {
+    console.error('Geocoding error:', error.message);
+    return null;
+  }
+}
+
+export async function getServerSideProps() {
+  try {
+    const base = getAirtableBase();
+    const records = await base("Demo Submissions").select({ view: "Granted" }).all();
+
+    const submissions = records.map((record) => {
+      const city = record.get("City") || null;
+      const country = record.get("Country") || null;
+      
+      const coordinates = record.get("Coordinates") || null;
+      
+      return {
+        id: record.id,
+        name: record.get("App Name"),
+        description: record.get("Short Description"),
+        author: `${record.get("First Name")} ${record.get("Last Name") || ""}`,
+        githubUsername: record.get("GitHub username"),
+        slackId: record.get("Hack Club Slack ID"),
+        githubUrl: record.get("Code URL (URL to GitHub / other code host repo)"),
+        demoUrl: record.get("Live URL (URL to deployed site)") || record.get("TestFlight URL"),
+        images: record.get("Screenshot") || [],
+        location: {
+          city,
+          country,
+          coordinates
+        }
+      };
+    });
+    
+    const geocodingPromises = [];
+    
+    submissions.forEach((submission) => {
+      const { city, country } = submission.location;
+      
+      if (submission.location.coordinates || (!city && !country)) {
+        return;
+      }
+      
+      geocodingPromises.push(
+        getCoordinates(city, country).then(coordinates => {
+          if (coordinates) {
+            submission.location.coordinates = coordinates;
+          }
+        })
+      );
+    });
+    
+    if (geocodingPromises.length > 0) {
+      await Promise.all(geocodingPromises);
+    }
+
+    return {
+      props: {
+        submissions: submissions.reverse().slice(0, 3),
+      },
+    };
+  } catch (error) {
+    console.error("Error fetching submissions:", error);
+    return {
+      props: {
+        submissions: [],
+        error: error.message,
+      },
+    };
+  }
+}
+
+export default function Home({ submissions, error }) {
   const { handleSubmit, control, formState: { isSubmitting } } = useForm();
+  const [submissionStatus, setSubmissionStatus] = useState(null);
 
   const onSubmit = async (data) => {
     try {
@@ -24,15 +142,12 @@ export default function Home() {
           "Content-Type": "application/json",
         },
       });
-      alert("Your email has been submitted! 🎉");
+      setSubmissionStatus("success");
     } catch (error) {
       console.error("Error submitting form:", error);
-      alert("There was an error submitting your email. Please try again.");
+      setSubmissionStatus("error");
     }
   };
-
-  const { data } = useSWR("/api/submissions", fetcher);
-  const submissions = (data || []).reverse().slice(0, 3);
 
   return (
     <main className="flex flex-col items-center">
