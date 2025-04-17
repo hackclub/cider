@@ -1,33 +1,157 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Footer from "../components/footer";
 import Head from "../components/head";
+import Meta from "../components/Meta";
+import Airtable from "airtable";
+import { Client } from "@googlemaps/google-maps-services-js";
 
-export default function SubmissionsPage() {
-  const [submissions, setSubmissions] = useState([]);
+const geocodeCache = new Map();
+
+const getAirtableBase = () => {
+  return new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(
+    process.env.AIRTABLE_BASE_ID
+  );
+};
+
+async function getCoordinates(city, country) {
+  if (!city && !country) return null;
+  if (!process.env.GOOGLE_MAPS_API_KEY) return null;
+  
+  const cacheKey = `${city || ''}-${country || ''}`;
+  
+  if (geocodeCache.has(cacheKey)) {
+    return geocodeCache.get(cacheKey);
+  }
+  
+  try {
+    const googleMapsClient = new Client({});
+    const locationQuery = [city, country].filter(Boolean).join(", ");
+    
+    const response = await googleMapsClient.geocode({
+      params: {
+        address: locationQuery,
+        key: process.env.GOOGLE_MAPS_API_KEY
+      },
+      timeout: 5000 
+    });
+    
+    if (response.data.results && response.data.results.length > 0) {
+      const location = response.data.results[0].geometry.location;
+      const result = {
+        latitude: location.lat,
+        longitude: location.lng
+      };
+      
+      // Cache the result for future use
+      geocodeCache.set(cacheKey, result);
+      
+      return result;
+    }
+    
+    return null;
+  } catch (error) {
+    console.error('Geocoding error:', error.message);
+    return null;
+  }
+}
+
+// Server-side data fetching
+export async function getServerSideProps() {
+  try {
+    const base = getAirtableBase();
+    const records = await base("Demo Submissions").select({ view: "Granted" }).all();
+
+    // Process all submissions
+    const submissions = records.map((record) => {
+      const city = record.get("City") || null;
+      const country = record.get("Country") || null;
+      
+      // Use existing coordinates if available in the record
+      const coordinates = record.get("Coordinates") || null;
+      
+      return {
+        id: record.id,
+        name: record.get("App Name"),
+        description: record.get("Short Description"),
+        author: `${record.get("First Name")} ${record.get("Last Name") || ""}`,
+        githubUsername: record.get("GitHub username"),
+        slackId: record.get("Hack Club Slack ID"),
+        githubUrl: record.get("Code URL (URL to GitHub / other code host repo)"),
+        demoUrl: record.get("Live URL (URL to deployed site)") || record.get("TestFlight URL"),
+        images: record.get("Screenshot") || [],
+        location: {
+          city,
+          country,
+          coordinates
+        }
+      };
+    });
+    
+    const geocodingPromises = [];
+    
+    submissions.forEach((submission) => {
+      const { city, country } = submission.location;
+      
+      if (submission.location.coordinates || (!city && !country)) {
+        return;
+      }
+      
+      geocodingPromises.push(
+        getCoordinates(city, country).then(coordinates => {
+          if (coordinates) {
+            submission.location.coordinates = coordinates;
+          }
+        })
+      );
+    });
+    
+    if (geocodingPromises.length > 0) {
+      await Promise.all(geocodingPromises);
+    }
+
+    return {
+      props: {
+        submissions: submissions.reverse(),
+      },
+    };
+  } catch (error) {
+    console.error("Error fetching submissions:", error);
+    return {
+      props: {
+        submissions: [],
+        error: error.message,
+      },
+    };
+  }
+}
+
+export default function SubmissionsPage({ submissions, error }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedSubmission, setSelectedSubmission] = useState(null);
+  
+  const isLoading = !submissions && !error;
 
-  useEffect(() => {
-    fetch("/api/submissions")
-      .then((response) => response.json())
-      .then((data) => setSubmissions(data))
-      .catch((error) => console.error("Error fetching submissions:", error));
-  }, []);
-
-  const filteredSubmissions = submissions.filter(
+  const filteredSubmissions = submissions ? submissions.filter(
     (submission) =>
       submission.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       submission.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      submission.author.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+      submission.author.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      (submission.location?.city && submission.location.city.toLowerCase().includes(searchTerm.toLowerCase())) ||
+      (submission.location?.country && submission.location.country.toLowerCase().includes(searchTerm.toLowerCase()))
+  ) : [];
 
   return (
     <div className="flex flex-col min-h-screen">
       <Head />
+      <Meta 
+        title="App Gallery" 
+        description="Explore amazing iOS apps created by the Hack Club community through the Cider program."
+        url="https://cider.hackclub.com/submissions"
+      />
       <a href="http://hackclub.com">
         <img
           src="/flag.svg"
@@ -49,7 +173,7 @@ export default function SubmissionsPage() {
           <div className="relative">
             <input
               type="text"
-              placeholder="Search by name, description, or author..."
+              placeholder="Search by name, description, author, or location..."
               className="w-full p-4 pl-12 text-hack-black bg-white border-2 border-gray-100 rounded-xl shadow-md focus:border-red focus:ring-2 focus:ring-red/20 outline-none transition"
               onChange={(e) => setSearchTerm(e.target.value)}
             />
@@ -61,22 +185,40 @@ export default function SubmissionsPage() {
           </div>
         </div>
         
+        {/* Loading state */}
+        {isLoading && (
+          <div className="col-span-full text-center py-16">
+            <div className="animate-spin w-12 h-12 border-4 border-red border-t-transparent rounded-full mx-auto mb-4"></div>
+            <p className="text-xl text-hack-muted">Loading submissions...</p>
+          </div>
+        )}
+        
+        {/* Error state */}
+        {error && (
+          <div className="col-span-full text-center py-16 text-red-500">
+            <p className="text-xl">Error loading submissions. Please try again later.</p>
+            <p className="text-sm mt-2 text-hack-muted">{error}</p>
+          </div>
+        )}
+        
         {/* Submission Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredSubmissions.length > 0 ? (
-            filteredSubmissions.map((submission) => (
-              <SubmissionCard
-                key={submission.id}
-                submission={submission}
-                onClick={() => setSelectedSubmission(submission)}
-              />
-            ))
-          ) : (
-            <div className="col-span-full text-center py-16">
-              <p className="text-xl text-hack-muted">No submissions found matching your search criteria.</p>
-            </div>
-          )}
-        </div>
+        {!isLoading && !error && (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {filteredSubmissions.length > 0 ? (
+              filteredSubmissions.map((submission) => (
+                <SubmissionCard
+                  key={submission.id}
+                  submission={submission}
+                  onClick={() => setSelectedSubmission(submission)}
+                />
+              ))
+            ) : (
+              <div className="col-span-full text-center py-16">
+                <p className="text-xl text-hack-muted">No submissions found matching your search criteria.</p>
+              </div>
+            )}
+          </div>
+        )}
       </div>
       
       {selectedSubmission && (
@@ -143,7 +285,7 @@ export function SubmissionCard({ submission, onClick }) {
             onClick={(e) => e.stopPropagation()}
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1-2-2h6"></path>
               <polyline points="15 3 21 3 21 9"></polyline>
               <line x1="10" y1="14" x2="21" y2="3"></line>
             </svg>
@@ -248,7 +390,7 @@ function SubmissionModal({ submission, onClose }) {
             className="btn btn-outline px-6 py-3 flex items-center justify-center gap-2 font-bold"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1-2-2h6"></path>
               <polyline points="15 3 21 3 21 9"></polyline>
               <line x1="10" y1="14" x2="21" y2="3"></line>
             </svg>
