@@ -1,6 +1,6 @@
 Name: Pick up app
  
-Description:
+Description: This is a pick up  app where you can discorder/find different restaurants and order items from them. You get also a interactive different order status(only works manual changes through database) 
 Github URL: https://github.com/KhalilHen/pt_pick_up_platform/tree/main/lib
 
 
