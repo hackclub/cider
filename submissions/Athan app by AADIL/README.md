@@ -23,7 +23,7 @@ GitHub URL: https://github.com/aadilnoufal/Athan_app_by_AADIL-ad-free-/tree/main
 
 How did you build this: I used React Native on vs code
 
-How many hours did you spend on this:  30-40 aracade style hours but 10.5 hakatimable hours
+
 
 Did you use wakatime to log your progress?: Yes
 
