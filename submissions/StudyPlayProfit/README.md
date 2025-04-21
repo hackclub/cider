@@ -4,13 +4,13 @@ Description: StudyPlayProfit is a game app aimed at making study more fun! Study
 
 GitHub URL: https://github.com/PyroProtato/StudyPlayProfit/tree/master
 
-How did you build this: I used React Native. Started out by skimming Youtube videos online fore HTML, JS, CSS, and React Native courses just to give me a general feel for the framework. Then I just dove right into the app, searching up things I didn't remember/understand/know and eventually with a lot of work I was able to make this!
+How did you build this: I used React Native. Started out by skimming Youtube videos online for HTML, JS, CSS, and React Native courses just to give me a general feel for the framework. Then I just dove right into the app, searching up things I didn't remember/understand/know and eventually with a lot of work I was able to make this!
 
 Did you use wakatime to log your progress?: Yes
 
-Testflight link:
+Testflight link: https://testflight.apple.com/join/FhjynMS1
 
-How many users on testflight?:
+How many users on testflight?: Just me on my iPad so far, but I'm planning on trying it out with my families other devices.
 
 Ship URL: https://hackclub.slack.com/archives/C0M8PUPU6/p1745116066610469
 
