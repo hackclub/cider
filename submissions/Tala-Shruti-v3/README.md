@@ -13,7 +13,7 @@ Tala Shruti is a clean and intuitive app designed for a sleek and easy way to ge
 
 **How did you build this**: Using Swift documentation and my experience with Swift in years 6–8 (learning it in school and building apps during that time).
 
-**How many hours did you spend on this**: Around 72 hours including v1 and v2.
+**How many hours did you spend on this**: Around 35-40 hours
 
 **Did you use #arcade to log your progress?**: No.
 
