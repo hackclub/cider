@@ -2,7 +2,7 @@
 
 **Description**: It is a tic tac toe app which makes playing Tic Tac Toe more fair with a 5x5 playing grid and flip a coin to see who starts first. There is many more features such as music and customisation features
 
-**GitHub URL**: [https://github.com/cooldude/recipe](https://github.com/jay-lchicken/XO-Frenzy)
+**GitHub URL**: [https://github.com/jay-lchicken/XO-Frenzy](https://github.com/jay-lchicken/XO-Frenzy)
 
 **How did you build this**: I used Swift UI to build the app. I added Vibrations to make the clicking experience better as well as AVKIt for audio. I spent a lot of time researching on the Tic Tac Toe alglorithm and how to use AVKit as well as how to make the Tic Tac Toe robot. I spent about 45 hours planning on Figma, watching YouTube Tutorials, Debugging etc.
 
