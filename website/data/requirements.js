@@ -1,5 +1,5 @@
 export const requirements = [
-  "Your app must be open-source, original, unique & built using either React Native or SwiftUI",
+  "Your app must be open-source, original, unique & built using React Native, SwiftUI or Flutter",
   "You must have dedicated at least 40 hours to building the app. This is a minimum requirement.",
   "It is required to use hackatime to log your progress while building the app.",
   "The app should solve a real problem or add significant value to the users' lives. Describe how the app will impact its users and what specific issues it addresses.",
