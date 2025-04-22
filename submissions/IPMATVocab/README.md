@@ -2,7 +2,7 @@ Name: IPMAT Vocab
 
 Github URL: https://github.com/shubhisroking/ipmat
 
-Description: IPMAT Vocab is a simple, effective app designed to help students preparing for the Integrated Program in Management Aptitude Test (IPMAT) build a strong vocabulary.
+Description: IPMAT Vocab is a simple and effective app designed to help students preparing for the Integrated Program in Management Aptitude Test (IPMAT) build a strong vocabulary through flashcards, with progress tracking by day and week.
 
 How did you build this: I used expo and a bit of zustand for state management.
 
@@ -14,4 +14,4 @@ How many users on testflight?: zero as of now
 
 Ship URL: N/A
 
-Video Demo URL: https://www.youtube.com/shorts/MAPoSaQTKI4
+Video Demo URL: [https://www.youtube.com/shorts/MAPoSaQTKI4](https://www.youtube.com/shorts/UksNQIquZ78)
