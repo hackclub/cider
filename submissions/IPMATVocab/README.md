@@ -14,4 +14,4 @@ How many users on testflight?: zero as of now
 
 Ship URL: N/A
 
-Video Demo URL: [https://www.youtube.com/shorts/MAPoSaQTKI4](https://www.youtube.com/shorts/UksNQIquZ78)
+Video Demo URL: https://www.youtube.com/shorts/UksNQIquZ78
