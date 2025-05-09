@@ -10,7 +10,7 @@ How many hours did you spend on this: It's was 41 hour's
 
 Did you use #hack-hour to log your progress?: yes 
 
-Testflight link: https://testflight.apple.com/join/fuNfXs3E
+Testflight link: https://testflight.apple.com/join/eJjRtCKJ
 
 How many users on testflight?: About 5 user's.
 
