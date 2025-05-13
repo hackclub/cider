@@ -1,6 +1,6 @@
 **Name**: Hackchat
 
-**Description**: It's a free and open source AI client using ai.hackclub.com ;)
+**Description**: A free and open source AI client using ai.hackclub.com ;)
 
 **GitHub URL**: https://github.com/liamcharger/Hackchat
 
