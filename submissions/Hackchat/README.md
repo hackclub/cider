@@ -2,7 +2,7 @@
 
 **Description**: It's a free and open source AI client using ai.hackclub.com ;)
 
-**GitHub URL**: https://github.com/cooldude/recipe
+**GitHub URL**: https://github.com/liamcharger/Hackchat
 
 **How did you build this**: With my very best friend, SwiftUI
 
