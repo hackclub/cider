@@ -8,7 +8,7 @@
 
 **Did you use Hakatime to log your progress?**: Yes
 
-**Testflight link**: 
+**Testflight link**: https://testflight.apple.com/join/2jsT3MF8
 
 **How many users on testflight?**: 0
 
