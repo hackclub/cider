@@ -11,8 +11,10 @@ Did you use Hakatime to log your progress?: Yes
 
 Testflight link: https://testflight.apple.com/join/tRtd7XgN
 
-How many users on testflight?: 5
+How many users on testflight?: 8
 
 Ship URL: https://hackclub.slack.com/archives/C0M8PUPU6/p1747693475537999
 
 Video Demo URL: https://youtube.com/shorts/kCYKbuPqwNE
+
+note: fixed changes
