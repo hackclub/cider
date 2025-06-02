@@ -24,37 +24,37 @@ const getAirtableBase = () => {
 async function getCoordinates(city, country) {
   if (!city && !country) return null;
   if (!process.env.GOOGLE_MAPS_API_KEY) return null;
-  
+
   const cacheKey = `${city || ''}-${country || ''}`;
-  
+
   if (geocodeCache.has(cacheKey)) {
     return geocodeCache.get(cacheKey);
   }
-  
+
   try {
     const googleMapsClient = new Client({});
     const locationQuery = [city, country].filter(Boolean).join(", ");
-    
+
     const response = await googleMapsClient.geocode({
       params: {
         address: locationQuery,
         key: process.env.GOOGLE_MAPS_API_KEY
       },
-      timeout: 5000 
+      timeout: 5000
     });
-    
+
     if (response.data.results && response.data.results.length > 0) {
       const location = response.data.results[0].geometry.location;
       const result = {
         latitude: location.lat,
         longitude: location.lng
       };
-      
+
       geocodeCache.set(cacheKey, result);
-      
+
       return result;
     }
-    
+
     return null;
   } catch (error) {
     console.error('Geocoding error:', error.message);
@@ -70,9 +70,9 @@ export async function getServerSideProps() {
     const submissions = records.map((record) => {
       const city = record.get("City") || null;
       const country = record.get("Country") || null;
-      
+
       const coordinates = record.get("Coordinates") || null;
-      
+
       return {
         id: record.id,
         name: record.get("App Name"),
@@ -90,16 +90,16 @@ export async function getServerSideProps() {
         }
       };
     });
-    
+
     const geocodingPromises = [];
-    
+
     submissions.forEach((submission) => {
       const { city, country } = submission.location;
-      
+
       if (submission.location.coordinates || (!city && !country)) {
         return;
       }
-      
+
       geocodingPromises.push(
         getCoordinates(city, country).then(coordinates => {
           if (coordinates) {
@@ -108,7 +108,7 @@ export async function getServerSideProps() {
         })
       );
     });
-    
+
     if (geocodingPromises.length > 0) {
       await Promise.all(geocodingPromises);
     }
@@ -153,14 +153,14 @@ export default function Home({ submissions, error }) {
     <main className="flex flex-col items-center">
       <Head />
       <MetaData />
-      
+
       <a href="http://hackclub.com">
         <img
           src="/flag.svg"
-          className="absolute top-12 left-4 w-1/4 lg:w-1/12 hover:transform hover:-rotate-12 hover:duration-300 hover:ease-in-out z-40"
+          className="absolute top-0 left-4 w-1/4 lg:w-1/12 hover:transform hover:-rotate-12 hover:duration-300 hover:ease-in-out z-40"
         />
       </a>
-      
+
       <div className="w-full h-full flex flex-col items-center header-gradient min-h-screen pt-16">
         <section className="flex flex-col items-center justify-center min-h-[70vh] gap-6 w-10/12 lg:w-1/2 text-white">
           <img src="/logo.svg" className="w-60 md:w-80 mb-4" />
@@ -189,7 +189,7 @@ export default function Home({ submissions, error }) {
             </a>
           </div>
         </section>
-        
+
         <div className="w-10/12 sm:w-auto max-w-xl mb-16 bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/30 shadow-xl">
           <h3 className="text-white text-xl font-bold mb-4">Get your $100 grant for Apple Developer Membership</h3>
           <form
@@ -246,7 +246,7 @@ export default function Home({ submissions, error }) {
           </form>
         </div>
       </div>
-      
+
       <section
         id="prompt"
         className="section-padding flex flex-col justify-center gap-8 w-11/12 max-w-6xl"
@@ -259,14 +259,13 @@ export default function Home({ submissions, error }) {
             </Balancer>
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {steps.map(({ heading, description, link, primary }, index) => (
             <div
               key={index}
-              className={`card flex flex-col justify-between gap-4 p-6 ${
-                primary ? "border-2 border-red md:transform md:scale-105" : ""
-              }`}
+              className={`card flex flex-col justify-between gap-4 p-6 ${primary ? "border-2 border-red md:transform md:scale-105" : ""
+                }`}
             >
               <div className="flex flex-col">
                 <span className="text-sm font-bold text-hack-muted mb-1">STEP {index + 1}</span>
@@ -302,7 +301,7 @@ export default function Home({ submissions, error }) {
           ))}
         </div>
       </section>
-      
+
       <section className="section-padding bg-white w-full">
         <div className="max-w-6xl mx-auto w-11/12">
           <h2 className="text-4xl md:text-5xl mb-8 text-center">Project Requirements</h2>
@@ -322,7 +321,7 @@ export default function Home({ submissions, error }) {
           </div>
         </div>
       </section>
-      
+
       <section className="section-padding flex flex-col items-center gap-12 justify-center w-11/12 max-w-6xl">
         <div className="text-center">
           <h2 className="text-4xl md:text-5xl mb-4">Cider tastes better with friends...</h2>
@@ -330,13 +329,13 @@ export default function Home({ submissions, error }) {
             Check out what others in the community have built!
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
           {submissions.map((submission, index) => (
             <SubmissionCard key={index} submission={submission} />
           ))}
         </div>
-        
+
         <a
           href="/submissions"
           className="btn btn-outline text-lg font-bold px-6 py-3 rounded-lg"
@@ -344,7 +343,7 @@ export default function Home({ submissions, error }) {
           View all submissions
         </a>
       </section>
-      
+
       <section className="section-padding bg-gray-50 w-full">
         <div className="max-w-6xl mx-auto w-11/12">
           <h2 className="text-4xl md:text-5xl mb-12 text-center">Frequently Asked Questions</h2>
@@ -355,7 +354,7 @@ export default function Home({ submissions, error }) {
           </div>
         </div>
       </section>
-      
+
       <section className="my-16 flex flex-col items-center justify-center gap-8 w-11/12 max-w-4xl text-center">
         <h2 className="text-4xl md:text-5xl">
           <Balancer>
@@ -365,7 +364,7 @@ export default function Home({ submissions, error }) {
         <p className="text-xl text-hack-muted max-w-3xl">
           Join our community, get $100 for your Apple Developer Membership, and ship in 30 days!
         </p>
-        
+
         <div className="w-full max-w-xl mt-4 bg-hack-smoke p-8 rounded-xl shadow-md border border-gray-100">
           <form className="flex flex-col gap-4" onSubmit={handleSubmit(onSubmit)}>
             <Controller
@@ -419,7 +418,7 @@ export default function Home({ submissions, error }) {
             </button>
           </form>
         </div>
-        
+
         <div className="mt-16 text-center">
           <a
             target="_blank"
@@ -440,7 +439,7 @@ export default function Home({ submissions, error }) {
           </p>
         </div>
       </section>
-      
+
       <Footer />
     </main>
   );
