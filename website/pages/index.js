@@ -151,7 +151,6 @@ export default function Home({ submissions, error }) {
 
   return (
     <main className="flex flex-col items-center">
-      <Banner />
       <Head />
       <MetaData />
       
