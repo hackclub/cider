@@ -2,7 +2,7 @@
 
 **Name**: Lost and Found 
 
-**Description**: This is a Lost and Found app built specifically for my high school. It's a mobile app where students can easily submit and browse lost or found items—like water bottles, ID cards, notebooks, etc. It gives everyone a central place to report items they've lost or found, instead of relying on word of mouth, posters, or random announcements. It’s fast, easy, and works from your phone. Before this, when someone lost something at school, it was hard to track it down unless someone magically stumbled upon it and knew whose it was. Now, we can just open the app, check what's been found, or submit a quick report—and there's a better chance of reuniting with our stuff 🙌
+**Description**: This is a Lost and Found app built specifically for my high school. It's a mobile app where students can easily submit and browse lost or found items—like water bottles, ID cards, notebooks, etc. It gives everyone a central place to report items they've lost or found, instead of relying on word of mouth, posters, or random announcements. It’s fast, easy, and works from your phone. Before this, when someone lost something at school, it was hard to track it down unless someone magically stumbled upon it and knew whose it was. Now, we can just open the app, check what's been found, or submit a quick report—and there's a better chance of reuniting with our stuff 🙌 
 
 **GitHub URL**: https://github.com/SlytherSavior/lost-and-found
 
@@ -16,4 +16,4 @@
 
 **Ship URL**: https://hackclub.slack.com/archives/C0M8PUPU6/p1745134529710849
 
-**Video Demo URL**: [DEMO HERE](https://www.youtube.com/watch?v=gVitHRlD35I)
+**Video Demo URL**: [DEMO HERE](https://www.youtube.com/shorts/h5c55gfcb5M)
