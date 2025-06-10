@@ -8,7 +8,7 @@ How did you build this: I Implement local storage (like UserDefaults or Core Dat
 
 Did you use Hakatime to log your progress?: Yes 
 
-Testflight link: https://snack.expo.dev/@riteplay/homework-tracker 
+Testflight link: https://snack.expo.dev/@riteplay/homework-tracker?platform=ios
 
 How many users on testflight?:
 4
