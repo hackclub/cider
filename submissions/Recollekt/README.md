@@ -15,6 +15,8 @@ How many hours did you spend on this: around 75
 
 Did you use #hackatime to log your progress?: Yes, but not fully.
 
+Testflight Link: https://testflight.apple.com/join/UravQ9cW
+
 Demo Video: https://youtu.be/ug9k7wWqLDQ
 
 Ship Link: https://hackclub.slack.com/archives/C0M8PUPU6/p1749933616286879
