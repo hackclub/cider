@@ -16,4 +16,4 @@ Neurobits is an AI-powered learning app that goes beyond normal brain training b
 
 **Ship URL**: https://hackclub.slack.com/archives/C0M8PUPU6/p1750442494827959
 
-**Video Demo URL**: [https://youtube.com/xyz](https://www.youtube.com/gxe)
+**Video Demo URL**: https://youtu.be/9ZU1ijL3IJs
