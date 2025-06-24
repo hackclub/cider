@@ -1,6 +1,6 @@
 **Name**: Maple-iOS
 
-**Description**: What is this app? How does it help you? What problem does it solve for you and your friends?
+**Description**: A music player that plays files you keep locally on your phone. Comes with a robust social functionality that allows you to see what your friends are listening to.
 
 **GitHub URL**: https://github.com/HammerPot
 
