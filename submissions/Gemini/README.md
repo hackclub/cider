@@ -10,10 +10,10 @@ How many hours did you spend on this: around 50 hours
 
 Did you use #hackatime to log your progress?: Sadly not because i coded it in Swift Playgrounds on iPadOS but i've logged my progress on Twitter over the days i worked on it
 
-TestFlight link: FILL ONCE FORM ACCEPTED
+TestFlight link: https://testflight.apple.com/join/gQ9YPZrW
 
-How many users on TestFlight?: FILL ONCE FORM ACCEPTED
+How many users on TestFlight?: 62 Testers
 
-Ship URL: FILL ONCE FORM ACCEPTED
+Ship URL: https://hackclub.slack.com/archives/C0M8PUPU6/p1751665740569979
 
 Video Demo URL: https://files.catbox.moe/24pgcr.mov
