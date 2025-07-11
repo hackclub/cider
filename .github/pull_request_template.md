@@ -13,6 +13,7 @@ Before creating your pull request, please fill out the criteria below to make su
 - [ ] I have joined the [`#cider`](https://hackclub.slack.com/archives/C073DTGENJ2) channel on [Slack](https://hackclub.com/slack/)
 - [ ] My app meets the following requirements:
   - [ ] Is open-source, original, unique & built using React Native, SwiftUI or Flutter
+  - [ ] Was not written with AI generated code
   - [ ] Has at least five unique screens (e.g., home, profile, settings, notifications, and a feature-specific screen).
   - [ ] Has some sort of data management system, using either local storage, cloud databases, or APIs.
   - [ ] Has a clean, user-friendly design that is easy to navigate and visually appealing.
