@@ -1,0 +1,6 @@
+${SRCROOT}/Packages/NearbyShare/Sources/NearbyShare/ProtobufGenerated/device_to_device_messages.pb.swift
+${SRCROOT}/Packages/NearbyShare/Sources/NearbyShare/ProtobufGenerated/offline_wire_formats.pb.swift
+${SRCROOT}/Packages/NearbyShare/Sources/NearbyShare/ProtobufGenerated/securegcm.pb.swift
+${SRCROOT}/Packages/NearbyShare/Sources/NearbyShare/ProtobufGenerated/securemessage.pb.swift
+${SRCROOT}/Packages/NearbyShare/Sources/NearbyShare/ProtobufGenerated/ukey.pb.swift
+${SRCROOT}/Packages/NearbyShare/Sources/NearbyShare/ProtobufGenerated/wire_format.pb.swift

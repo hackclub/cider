@@ -1,0 +1,6 @@
+${SRCROOT}/Packages/NearbyShare/ProtobufSource/device_to_device_messages.proto
+${SRCROOT}/Packages/NearbyShare/ProtobufSource/offline_wire_formats.proto
+${SRCROOT}/Packages/NearbyShare/ProtobufSource/securegcm.proto
+${SRCROOT}/Packages/NearbyShare/ProtobufSource/securemessage.proto
+${SRCROOT}/Packages/NearbyShare/ProtobufSource/ukey.proto
+${SRCROOT}/Packages/NearbyShare/ProtobufSource/wire_format.proto
