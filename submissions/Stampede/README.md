@@ -1,17 +1,17 @@
-Name: Cool Recipes
+**Name**: Stampede
 
-Description: What is this app? How does it help you? What problem does it solve for you and your friends?
+**Description**: 
 
-GitHub URL: https://github.com/cooldude/recipe
+**GitHub URL**: https://github.com/NCP-Stampede/northside-app
 
-How did you build this: I used Swift UI to build the app. Followed a bunch of guides and tutorials online and then when I felt comfortable, started building my own version of the app.
+**How did you build this**: I built it using flutter for the front-end. For the data scraping, I used python and set up a REST API for both to communicate.
 
-Did you use Hakatime to log your progress?: Yes / No
+**Did you use Hakatime to log your progress?**: Yes
 
-Testflight link:
+**Testflight link**:
 
-How many users on testflight?:
+**How many users on testflight?**:
 
-Ship URL: https://hackclub.slack.com/abc (URL of your slack post in the #ship channel on Hack Club Slack)
+**Ship URL**: 
 
-Video Demo URL: https://youtube.com/xyz
+**Video Demo URL**: https://youtu.be/gYQJUDSGqhw
