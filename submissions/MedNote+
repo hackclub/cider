@@ -1,0 +1,19 @@
+Name: MedNote+
+
+Description: What is this app? How does it help you? What problem does it solve for you and your friends?
+
+It takes all of your symptoms and crafts an easy, proffesional email thyat you can send to your boss, coworkers or teachers at school. I used to dread being sick since I would have to wake up and tell all my teachers that I would not come to school that day, but now that is fixed with this application.
+
+GitHub URL:(https://github.com/kankit12/Med-Note)
+
+How did you build this: I used Swift UI to build the app. I had a loooooot of trouble shooting and since it was my first time using swift, I had to watch a tone of youtube tutorials.
+Did you use Hakatime to log your progress?: Yes 
+
+Testflight link: https://testflight.apple.com/join/4rNAKYAA
+
+How many users on testflight?: 3
+
+Ship URL: https://hackclub.slack.com/archives/C0M8PUPU6/p1747923108262209
+
+Video Demo URL: 
+https://drive.google.com/file/d/18NPAsBvuAZZvfhs6fDRoyOYk0ybBiBW0/view?usp=sharing
