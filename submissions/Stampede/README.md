@@ -8,10 +8,10 @@
 
 **Did you use Hakatime to log your progress?**: Yes
 
-**Testflight link**:
+**Testflight link**: https://testflight.apple.com/join/CU4v8VHw
 
 **How many users on testflight?**:
 
-**Ship URL**: 
+**Ship URL**: https://hackclub.slack.com/archives/C0M8PUPU6/p1754707483642639
 
 **Video Demo URL**: https://youtu.be/gYQJUDSGqhw
