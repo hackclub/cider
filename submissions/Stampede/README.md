@@ -10,7 +10,7 @@
 
 **Testflight link**: https://testflight.apple.com/join/CU4v8VHw
 
-**How many users on testflight?**:
+**How many users on testflight?**: 17
 
 **Ship URL**: https://hackclub.slack.com/archives/C0M8PUPU6/p1754707483642639
 
