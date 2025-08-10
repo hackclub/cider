@@ -1,6 +1,6 @@
 **Name**: Stampede
 
-**Description**: One place for all information about Northside. Rather than looking at 5 different websites to stay updated or find what you are looking for, we do that for you and now you can just find it all here.
+**Description**: One place for all information about Northside including school events, student announcements, and athletics. Rather than looking at 5 different websites to stay updated or find what you are looking for, we do that for you and now you can just find it all here.
 
 **GitHub URL**: https://github.com/NCP-Stampede/northside-app
 
