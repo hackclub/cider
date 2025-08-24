@@ -16,7 +16,7 @@ Additional features such as club search, event updates, and counselor contact ha
 
 ---
 
-**How did you build this**
+**How did you build this?**
 My team and I used Dart code with the Flutter SDK to create a majority of the app. Certain features such as live activities/dynamic island integration required swift-specific code. All database and authentication integration was done through Firebase, with the use of various Flutter plugins throughout the app.  
 
 ---
