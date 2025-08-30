@@ -13,7 +13,7 @@ How did you build this: I originally started with swift via tutorials and docs, 
 
 Did you use Hakatime to log your progress?: Yes
 
-Testflight link: https://testflight.apple.com/join/dGkuZjg6
+Testflight link: https://testflight.apple.com/join/dGkuZjg6 (might not work due to in review)
 
 How many users on testflight?:1
 
