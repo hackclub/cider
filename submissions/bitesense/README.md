@@ -4,7 +4,7 @@
 
 **GitHub URL**: https://github.com/vracton/bitesenseapp
 
-**How did you build this**: I used SwiftUI to make this. This was my frist real SwiftUI app, so I had to spend a signficiant amount of time learning how to make the unique features for this app. Additionally, I had to figure out how to convert a Keras-based model into one compatible with CoreML.
+**How did you build this**: I used SwiftUI to make this. This was my first real SwiftUI app, so I had to spend a signficiant amount of time learning how to make the unique features for this app. Additionally, I had to figure out how to convert a Keras-based model into one compatible with CoreML.
 
 **Did you use Hakatime to log your progress?**: Yes
 
