@@ -1,0 +1,19 @@
+Name: Notebook Task
+
+Description: Notebook Task combines productivity with simplicity, helping user's stay organized without overwhelming them with unnecessary features.
+
+GitHub URL: https://github.com/lagofernan/Notebook-Task
+
+How did you build this: The app is built around Swift UI while using the apple design kit to properly render the user experience buttons and the action bars like Navigation, Notepad and even keyboard to match the consistency that apple design has.
+
+How many hours did you spend on this: It's was 41 hour's
+
+Did you use #hack-hour to log your progress?: yes 
+
+Testflight link: https://testflight.apple.com/join/eJjRtCKJ
+
+How many users on testflight?: About 5 user's.
+
+Ship URL: https://app.slack.com/client/T0266FRGM/C0M8PUPU6
+
+Video Demo URL: https://hc-cdn.hel1.your-objectstorage.com/s/v3/841d84823e5f146eaa3eb815ef9f66f7f33d76cc_notebook.mp4
